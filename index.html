@@ -9,6 +9,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500;700&family=Peralta&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@200;500;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
@@ -27,17 +38,18 @@
             colors: {
               hijaumuda: "#8ac926",
               hijautua: "#137547",
-              kuning: "#ffe45e",
+              kuning: "#F4C447",
               darkblue: "#25316D",
-              ijo: "#418C60",
-              ijogelap: "#5A9298",
-              darkijo: "#3D6660",
-              ijoterang: "#66A399",
+              biru: "#449FD8",
+              ijo: "#71A72D",
               gelap: "#0B2027",
               terang: "#8CBAB4",
             },
             fontFamily: {
+              
+              peralta: ["Peralta"],
               inter: ["Inter"],
+              kaisei: ["Kaisei"],
             },
             screens: {
               "2xl": "1320px",
@@ -137,47 +149,97 @@
     </header>
     <!-- Header end -->
     <!-- Hero section start -->
-    <section
-      id="home"
-      class="bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-80 py-32 bg-gradient-to-tr from-ijoterang via-ijogelap to-ijoterang bg-contain md:bg-contain bg-no-repeat lg:bg-auto"
-    >
-      <div class="container">
-        <div class="flex flex-wrap" data-aos="fade-up" data-aos-duration="700">
-          <div class="w-full self-center px-4 lg:w-[45%]">
-            <h1
-              class="text-3xl font-bold font-sans md:text-4xl lg:text-5xl"
-              data-aos="fade-up"
-              data-aos-duration="700"
-            >
-              KEMUDAHAN DI SEGALA TRANSAKSI MATA UANG
-            </h1>
-            <p
-              class="text-xl ml-1 my-4 leading-relaxed font-light text-gelap md:text-2xl"
-            >
-              TUKER.IN menyediakan berbagai fitur yang memudahkan untuk
-              bertransaksi menggunakan berbagai jenis mata uang.
-            </p>
-            <button class="mt-5">
-              <a
-                href="login.html"
-                class="text-base font-semibold text-white lg:text-2xl bg-ijo px-10 py-4 rounded-xl hover:opacity-80 hover:shadow-lg hover:text-black transition duration-300 ease-in-out"
+    <section id="home">
+      <div class="relative">
+        <ul id="slider">
+          <li class="h-[90vh] md:h-[91vh] lg:h-[95vh] bg-gray-200 relative">
+            <img
+              class="w-full h-full bg-cover bg-no-repeat"
+              src="aset/bg-login.png"
+              alt=""
+            />
+            <div class="relative">
+              <h1
+                class="absolute text-4xl bottom-36 md:bottom-32 lg:bottom-36 left-1/2 -translate-x-1/2 font-normal text-white mx-auto text-center bg-hijaumuda p-2 rounded-md"
               >
-                Login
-              </a>
-            </button>
-            <button class="ml-5">
-              <a
-                href="#fitur"
-                class="text-base font-semibold text-white bg-ijo lg:text-2xl px-6 py-4 rounded-xl hover:opacity-80 hover:shadow-lg hover:text-black transition duration-300 ease-in-out"
-              >
-                Tentang Kami
-              </a>
-            </button>
-          </div>
-          <div class="w-full self-end lg:w-[55%]">
-            <div class="relative mt-10">
-              <img src="aset/home.png" alt="animasi home" />
+                Title disini nih
+              </h1>
             </div>
+          </li>
+          <li
+            class="h-[90vh] md:h-[91vh] lg:h-[95vh] bg-gray-200 relative hidden"
+          >
+            <img
+              class="w-full h-full bg-cover bg-no-repeat"
+              src="aset/bg-batik.jpeg"
+              alt=""
+            />
+            <div class="relative">
+              <h1
+                class="absolute text-4xl bottom-36 md:bottom-32 lg:bottom-36 left-1/2 -translate-x-1/2 font-normal text-white mx-auto text-center bg-hijaumuda p-2 rounded-md"
+              >
+                Title disini nih
+              </h1>
+            </div>
+          </li>
+          <li
+            class="h-[90vh] md:h-[91vh] lg:h-[95vh] bg-gray-200 relative hidden"
+          >
+            <img
+              class="w-full h-full bg-cover bg-no-repeat"
+              src="aset/bg-maintenance.png"
+              alt=""
+            />
+            <div class="relative">
+              <h1
+                class="absolute text-4xl bottom-36 md:bottom-32 lg:bottom-36 left-1/2 -translate-x-1/2 font-normal text-white mx-auto text-center bg-hijaumuda p-2 rounded-md"
+              >
+                Title disini nih
+              </h1>
+            </div>
+          </li>
+        </ul>
+
+        <div class="absolute px-5 flex h-full w-full top-0 left-0">
+          <div class="my-auto w-full flex justify-between">
+            <button
+              onclick="prev()"
+              class="bg-white p-3 rounded-full bg-opacity-80 shadow-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+                />
+              </svg>
+            </button>
+            <button
+              onclick="next()"
+              class="bg-white p-3 rounded-full bg-opacity-80 shadow-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </div>
@@ -185,100 +247,139 @@
     <!-- Hero section end -->
 
     <!-- About section start -->
-    <section
-      id="about"
-      class="bg-opacity-80 "
-    >
+    <section id="about" class="bg-opacity-80 backdrop-blur-2xl">
       <div class="container1">
         <div class="w-full flex flex-wrap">
           <div
-            class="transition ease-in-out duration-200  hover:shadow-xl w-full h-[27rem] shadow-lg bg-ijo mb-20 mx-auto lg:w-1/4   px-14 pt-8 pb-32 relative"
+            class="transition ease-in-out duration-200 hover:shadow-xl w-full h-[27rem] shadow-lg bg-ijo mx-auto lg:w-1/4 px-14 pt-8 pb-32 relative"
           >
             <div class="flex absolute -top-20 left-1/2 -translate-x-1/2">
-              <img src="./aset/Berdiri.png" class="w-52 lg:w-96" />
+              <img src="./aset/icon-guru.png" class="w-44  lg:w-40" />
             </div>
-            <h2 class="font-inter font-bold mt-16 md:mt-8 lg:mt-16 text-2xl">Tahun Berdiri</h2>
+            <h2 class="font-inter font-bold mt-16 md:mt-8 lg:mt-16 text-2xl">
+              Tahun Berdiri
+            </h2>
             <p class="font-serif">
               Tukerin dikembangkan pada tahun 2022 dan saat ini versi 1.0
             </p>
           </div>
           <div
-            class="transition ease-in-out duration-200  hover:shadow-xl w-full shadow-lg bg-ijoterang mb-20 mx-auto lg:w-1/4  px-14 pt-8 pb-32 relative"
+            class="transition ease-in-out duration-200 hover:shadow-xl w-full h-[27rem] shadow-lg bg-kuning mx-auto lg:w-1/4 px-14 pt-8 pb-32 relative"
           >
-            <div
-              class="flex absolute -top-12 lg:-top-16 left-1/2 -translate-x-1/2"
-            >
-              <img
-                src="./aset/easy.png"
-                class="w-[100px] md:w-[120px] lg:w-[125px];"
-              />
+            <div class="flex absolute -top-20 left-1/2 -translate-x-1/2">
+              <img src="./aset/icon-kurikulum.png" class="w-44  lg:w-40" />
             </div>
-            <h2 class="font-inter font-bold mt-8 text-2xl">Mudah Digunakan</h2>
+            <h2 class="font-inter font-bold mt-16 md:mt-8 lg:mt-16 text-2xl">
+              Tahun Berdiri
+            </h2>
             <p class="font-serif">
-              Tuker.in merupakan aplikasi yang bersifat user friendly atau mudah
-              digunakan
+              Tukerin dikembangkan pada tahun 2022 dan saat ini versi 1.0
             </p>
           </div>
           <div
-            class="transition ease-in-out duration-200  hover:shadow-xl w-full shadow-lg bg-ijogelap mb-20 mx-auto lg:w-1/4  px-14 pt-8 pb-32 relative"
+            class="transition ease-in-out duration-200 hover:shadow-xl w-full h-[27rem] shadow-lg bg-ijo mx-auto lg:w-1/4 px-14 pt-8 pb-32 relative"
           >
-            <div
-              class="flex absolute -top-14 lg:-top-20 left-1/2 -translate-x-1/2"
-            >
-              <img src="./aset/secure.png" class="w-32 md:w-40 lg:w-44" />
+            <div class="flex absolute -top-20 left-1/2 -translate-x-1/2">
+              <img src="./aset/icon-fasilitas.png" class="w-44  lg:w-40" />
             </div>
-            <h2 class="font-inter font-bold mt-8 text-2xl">Aman</h2>
-            <p class="font-serif">Segala transaksi dijamin keamanannya</p>
+            <h2 class="font-inter font-bold mt-16 md:mt-8 lg:mt-16 text-2xl">
+              Tahun Berdiri
+            </h2>
+            <p class="font-serif">
+              Tukerin dikembangkan pada tahun 2022 dan saat ini versi 1.0
+            </p>
           </div>
           <div
-            class="transition ease-in-out duration-200  hover:shadow-xl w-full shadow-lg bg-ijogelap mb-20 mx-auto lg:w-1/4  px-14 pt-8 pb-32 relative"
+            class="transition ease-in-out duration-200 hover:shadow-xl w-full h-[27rem] shadow-lg bg-kuning mx-auto lg:w-1/4 px-14 pt-8 pb-32 relative"
           >
-            <div
-              class="flex absolute -top-14 lg:-top-20 left-1/2 -translate-x-1/2"
-            >
-              <img src="./aset/secure.png" class="w-32 md:w-40 lg:w-44" />
+            <div class="flex absolute -top-20 left-1/2 -translate-x-1/2">
+              <img src="./aset/icon-guru.png" class="w-44  lg:w-40" />
             </div>
-            <h2 class="font-inter font-bold mt-8 text-2xl">Aman</h2>
-            <p class="font-serif">Segala transaksi dijamin keamanannya</p>
+            <h2 class="font-inter font-bold mt-16 md:mt-8 lg:mt-16 text-2xl">
+              Tahun Berdiri
+            </h2>
+            <p class="font-serif">
+              Tukerin dikembangkan pada tahun 2022 dan saat ini versi 1.0
+            </p>
           </div>
-        </div>
-      </div>
-      <div class="grid lg:grid-cols-1">
-        <div class="col-span-1">
-          <!-- button start -->
-          <div>
-            <!-- graph -->
-            <div
-              class="shadow-lg bg-gradient-to-b from-[#FFE84399] via-[#FFE843] to-[#86D72099] hover:shadow-xl py-3 px-3 rounded-md border border-gray-200"
-            >
-              <!-- text header -->
-              <div>
-                <h3 class="font-sans text-2xl font-bold text-center py-3">
-                  Welcome to Ananda Mentari
-                </h3>
-                <p class="font-sans text-xl text-center">
-                  Budi Mulia Dua (BMD) adalah sekolah Islam, Bilingual, yang
-                  bertaraf Internasional. Kurikulum di Budi Mulia Dua terdiri dari
-                  Cambridge, Nasional, Islamic Montessori, dan Kurikulum Budi
-                  Mulia Dua yang dikembangkan oleh tim dan guru-guru di Budi Mulia
-                  Dua.
-                </p>
-                <p class="font-sans text-xl text-center">
-                  DUA di Budi Mulia Dua berarti DUnia Akhirat. Tujuan Budi Mulia
-                  Dua (BMD) didirikan adalah untuk menjadi sarana kita yang
-                  berkecimpung di BMD untuk menabung amal dan ibadah di Dunia ini,
-                  untuk tabungan pahala kita di Akhirat nanti. (DUA:DUniaAkhirat).
-                </p>
-              </div>
-              <!-- text header end -->
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>
     <!-- about section end -->
+    <div class="w-full">
+      <!-- text header -->
+      <div class="pt-32 px-40 ">
+        <h2 class="font-peralta text-[30px] font-bold text-center text-biru">
+          Welcome To
+        </h2>
+        <h2 class="font-peralta text-5xl font-bold text-center pb-5 text-kuning">
+          Ananda Mentari
+        </h2>
+        <p class="font-sans text-xl text-center">
+          Budi Mulia Dua (BMD) adalah sekolah Islam, Bilingual, yang
+          bertaraf Internasional. Kurikulum di Budi Mulia Dua terdiri dari
+          Cambridge, Nasional, Islamic Montessori, dan Kurikulum Budi Mulia
+          Dua yang dikembangkan oleh tim dan guru-guru di Budi Mulia Dua.
+        </p>
+        <p class="font-sans text-xl text-center">
+          DUA di Budi Mulia Dua berarti DUnia Akhirat. Tujuan Budi Mulia Dua
+          (BMD) didirikan adalah untuk menjadi sarana kita yang berkecimpung
+          di BMD untuk menabung amal dan ibadah di Dunia ini, untuk tabungan
+          pahala kita di Akhirat nanti. (DUA:DUniaAkhirat).
+        </p>
+      </div>
+      <!-- text header end -->
+      <img src="aset/welcome.png" class="object-cover w-full " alt="">
+    </div>
     <!-- Fitur section start -->
-    <section id="fitur" class="pt-10 pb-16 bg-slate-200">
+    <!-- Hero section start -->
+    <section
+      class="bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-80  bg-gradient-to-tr from-ijoterang via-ijogelap to-ijoterang bg-contain md:bg-contain bg-no-repeat lg:bg-auto"
+      
+    >
+      <div
+      style="background-image:url(aset/bg-sun.png)" class="w-full h-screen bg-no-repeat bg-cover">
+        <div class="container" data-aos="fade-up" data-aos-duration="700">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            
+            <h2
+              class="mx-auto font-bold font-sans md:text-4xl lg:text-5xl mb-2 pt-10 text-biru font-inter text-3xl "
+              data-aos="fade-up"
+            >
+              Pilar
+            </h2>
+            <h2
+              class="mx-auto mb-2 text-[#F4C447] font-inter font-bold text-3xl md:text-3xl lg:5xl"
+              data-aos="fade-up"
+            >
+              Ananda Mentari
+            </h2>
+          </div>
+          <div
+           class="w-full self-end  lg:w-[55%]" >
+            <div class="relative mt-10">
+             
+            </div>
+          </div>
+          <div class="w-1/2 mx-auto mr-96 px-4 lg:w-[45%] border border-2-red" >
+            
+            <h1 class="text-3xl font-bold font-sans md:text-4xl lg:text-5xl" data-aos="fade-up" data-aos-duration="700">
+              KEMUDAHAN DI SEGALA TRANSAKSI MATA UANG
+            </h1>
+            <p
+              class="text-xl ml-1 my-4 leading-relaxed font-light text-gelap md:text-2xl "
+            >
+            TUKER.IN menyediakan berbagai fitur yang memudahkan untuk bertransaksi menggunakan berbagai jenis mata uang.
+            </p>
+            
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- Hero section end -->
+    <section id="fitur" class="pt-10 pb-16 bg-cover bg-no-repeat">
       <div class="container">
         <div class="w-full self-center px-4 mb-10">
           <div class="max-w-xl mx-auto text-center mb-16">
@@ -604,20 +705,7 @@
         ></path>
       </svg>
     </div>
-    <div class="rotate-180">
-      <svg
-        role="img"
-        class="text-opacity-80 text-[#73ABA3] fill-current"
-        data-name="Layer 1"
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
-      >
-        <path
-          d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-          class="shape-fill"
-        ></path>
-      </svg>
-    </div>
+    
     <!-- Pemisah end -->
 
     <!-- Ekstrakulikuler start -->
@@ -871,174 +959,44 @@
     </div>
     <!-- Ekstrakulikuler end -->
 
-    <!-- Pemisah start-->
-    <div class="rotate-180 bg-opacity-80 -mb-[0.5px] bg-[#73ABA3]">
-      <svg
-        role="img"
-        class="text-white fill-current"
-        data-name="Layer 1"
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
+    <div class="max-w-xl mx-auto text-center mb-16 mt-20">
+      <h3
+        class="text-kuning mx-auto mb-2 mt-10 font-inter font-bold text-3xl md:text-3xl lg:5xl"
+        data-aos="fade-up"
       >
-        <path
-          d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-          class="shape-fill"
-        ></path>
-      </svg>
+        School <span class="text-hijaumuda">Facility</span>
+      </h3>
     </div>
-    <div class="rotate-180">
-      <svg
-        role="img"
-        class="text-opacity-80 text-[#73ABA3] fill-current"
-        data-name="Layer 1"
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
-      >
-        <path
-          d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-          class="shape-fill"
-        ></path>
-      </svg>
-    </div>
-    <!-- Pemisah end -->
-
-    <!-- Testimoni start -->
-
-    <!-- require JavaScript for carousel to work 
-     eg : https://swiperjs.com/
--->>
-
-    <div class="py-16 bg-gray-50">
-      <div class="container m-auto text-gray-600 md:px-12 xl:px-6">
-        <div class="mb-12 space-y-4 px-6 md:px-0">
-          <h2 class="text-center text-2xl text-gray-900 font-bold md:text-4xl">
-            We have some fans.
-          </h2>
-          <p class="text-center">
-            We don't like to brag, but we don't mind letting our customers do it
-            for us. <br />
-            Here are a few nice things folks have said about our themes over the
-            years.
-          </p>
-        </div>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper pb-8">
-            <div class="swiper-slide !bg-transparent px-6 md:px-0">
-              <div
-                class="rounded-xl bg-white shadow-xl md:mx-auto lg:w-9/12 xl:w-7/12"
-              >
-                <div class="grid md:grid-cols-2">
-                  <img
-                    src="images/card.webp"
-                    class="rounded-t-xl h-full w-full object-cover md:rounded-l-xl md:rounded-tr-none"
-                    alt="image"
-                    width="640"
-                    height="422"
-                    loading="lazy"
-                  />
-                  <div class="mx-auto space-y-6 p-6 text-center sm:p-8">
-                    <div class="w-24 mx-auto">
-                      <img
-                        src="images/clients/client-4.png"
-                        alt="company logo"
-                        height="400"
-                        width="142"
-                        loading="lazy"
-                      />
-                    </div>
-                    <p class="text-gray-600">
-                      <span class="font-serif">"</span> Lorem ipsum dolor sit
-                      amet consectetur adipisicing elit. Quaerat repellat
-                      perspiciatis excepturi est. Non ipsum iusto aliquam
-                      consequatur repellat provident, omnis ut, sapiente
-                      voluptates veritatis cum deleniti repudiandae ad
-                      doloribus. <span class="font-serif">"</span>
-                    </p>
-                    <h6 class="text-lg font-semibold leading-none">John Doe</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide !bg-transparent px-6 md:px-0">
-              <div class="rounded-xl bg-white shadow-xl md:mx-auto lg:w-7/12">
-                <div class="grid md:grid-cols-2">
-                  <img
-                    src="images/card2.webp"
-                    class="rounded-t-xl h-full w-full object-cover md:rounded-l-xl md:rounded-tr-none"
-                    alt="image"
-                    width="640"
-                    height="422"
-                    loading="lazy"
-                  />
-                  <div class="mx-auto space-y-6 p-6 text-center sm:p-8">
-                    <div class="w-24 mx-auto">
-                      <img
-                        class="mx-auto w-24"
-                        src="images/clients/client-3.png"
-                        alt="company logo"
-                        height="400"
-                        width="142"
-                        loading="lazy"
-                      />
-                    </div>
-                    <p class="text-gray-600">
-                      <span class="font-serif">"</span> Lorem ipsum dolor sit
-                      amet consectetur adipisicing elit. Quaerat repellat
-                      perspiciatis excepturi est. Non ipsum iusto aliquam
-                      consequatur repellat provident, omnis ut, sapiente
-                      voluptates veritatis cum deleniti repudiandae ad
-                      doloribus. <span class="font-serif">"</span>
-                    </p>
-                    <h6 class="text-lg font-semibold leading-none">John Doe</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide !bg-transparent px-6 md:px-0">
-              <div class="rounded-xl bg-white shadow-xl md:mx-auto lg:w-7/12">
-                <div class="grid md:grid-cols-2">
-                  <img
-                    src="images/card3.webp"
-                    class="rounded-t-xl h-full w-full object-cover md:rounded-l-xl md:rounded-tr-none"
-                    alt="image"
-                    width="640"
-                    height="422"
-                    loading="lazy"
-                  />
-                  <div class="mx-auto space-y-6 p-6 text-center sm:p-8">
-                    <div class="w-24 mx-auto">
-                      <img
-                        class="mx-auto w-24"
-                        src="images/clients/client-8.png"
-                        alt="company logo"
-                        height="400"
-                        width="142"
-                        loading="lazy"
-                      />
-                    </div>
-                    <p class="text-gray-600">
-                      <span class="font-serif">"</span> Lorem ipsum dolor sit
-                      amet consectetur adipisicing elit. Quaerat repellat
-                      perspiciatis excepturi est. Non ipsum iusto aliquam
-                      consequatur repellat provident, omnis ut, sapiente
-                      voluptates veritatis cum deleniti repudiandae ad
-                      doloribus. <span class="font-serif">"</span>
-                    </p>
-                    <h6 class="text-lg font-semibold leading-none">John Doe</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-pagination"></div>
-        </div>
+    <div
+      style="background-image: url('aset/class.png')"
+      class="bg-cover bg-fixed w-full flex h-[50vh]  hover:shadow-xl py-3 px-3 rounded-md border border-gray-200"
+    >
+      <!-- text header -->
+      <div class="w-full h-full p-20 pt-16 overflow-y-scroll my-auto backdrop-blur-sm bg-white/40">
+        <h3 class="font-kaisei text-4xl font-bold text-center pb-5">
+          Welcome to Ananda Mentari
+        </h3>
+        <p class="font-sans text-xl text-center">
+          Budi Mulia Dua (BMD) adalah sekolah Islam, Bilingual, yang bertaraf
+          Internasional. Kurikulum di Budi Mulia Dua terdiri dari Cambridge,
+          Nasional, Islamic Montessori, dan Kurikulum Budi Mulia Dua yang
+          dikembangkan oleh tim dan guru-guru di Budi Mulia Dua.
+        </p>
+        <p class="font-sans text-xl text-center">
+          DUA di Budi Mulia Dua berarti DUnia Akhirat. Tujuan Budi Mulia Dua
+          (BMD) didirikan adalah untuk menjadi sarana kita yang berkecimpung di
+          BMD untuk menabung amal dan ibadah di Dunia ini, untuk tabungan pahala
+          kita di Akhirat nanti. (DUA:DUniaAkhirat).
+        </p>
       </div>
+      <!-- text header end -->
     </div>
 
-    <!-- Testimoni end -->
+    <video class="w-1/2 h-500 mx-auto py-10" controls>
+      <source src="aset/Karya Dhika Residence.mp4" type="video/mp4">
+      
+      Your browser does not support the video tag.
+    </video>
 
     <!-- Kontak sections start -->
     <section id="kontak" class="pt-36 pb-32">
@@ -1054,7 +1012,7 @@
           </div>
           <form>
             <div class="w-full lg:w-2/3 lg:mx-auto">
-              <div class="w-full px-4"  data-aos="fade-up">
+              <div class="w-full px-4" data-aos="fade-up">
                 <label for="name" class="text-based text-ijo font-bold"
                   >Nama</label
                 >
@@ -1064,7 +1022,7 @@
                   class="w-full my-3 bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-ijo focus:ring-1 focus:border-ijo"
                 />
               </div>
-              <div class="w-full px-4"  data-aos="fade-up">
+              <div class="w-full px-4" data-aos="fade-up">
                 <label for="email" class="text-based text-ijo font-bold"
                   >Email</label
                 >
@@ -1074,7 +1032,7 @@
                   class="w-full my-3 bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-ijo focus:ring-1 focus:border-ijo"
                 />
               </div>
-              <div class="w-full px-4"  data-aos="fade-up">
+              <div class="w-full px-4" data-aos="fade-up">
                 <label for="message" class="text-based text-ijo font-bold"
                   >Pesan</label
                 >
@@ -1085,7 +1043,11 @@
                 >
                 </textarea>
               </div>
-              <div class="w-full px-4"  data-aos="fade-up" data-aos-duration="2000">
+              <div
+                class="w-full px-4"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
                 <button
                   class="text-base w-full font-semibold text-white bg-ijoterang py-3 px-8 rounded-full hover:opacity-80 hover:shadow-lg transition duration-500"
                 >
@@ -1100,8 +1062,7 @@
     <!-- Kontak section end -->
     <!-- Footer section start-->
     <footer
-      style="background-image: url('aset/bg-batik.jpeg')"
-      class="pt-12 pb-12 bg-no-repeat bg-cover"
+      class="pt-12 pb-12 bg-[#FFCF55]"
     >
       <div class="container">
         <div class="flex flex-wrap" data-aos="fade-up" data-aos-duration="2000">
@@ -1113,7 +1074,7 @@
               href="http://maps.google.com/?q=Playgroup and Daycare Ananda Mentari"
             >
               <svg
-                class="w-6 mr-2 "
+                class="w-6 mr-2"
                 role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -1139,7 +1100,7 @@
               href="https://wa.me/+6281211717144"
             >
               <svg
-                class="w-6 mr-2 "
+                class="w-6 mr-2"
                 role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -1157,7 +1118,7 @@
               href="tel:(0274) 43 329 51"
             >
               <svg
-                class="w-6 mr-2 "
+                class="w-6 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
@@ -1178,8 +1139,7 @@
               href="mailto:@Paud.AnandaMentari.id"
             >
               <svg
-              
-              class="w-6 mr-2"
+                class="w-6 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
@@ -1197,7 +1157,7 @@
             </a>
           </div>
           <div class="w-full text-black px-4 mb-12 md:w-1/3">
-            <h3 class="font-semibold text-xl mb-5">Tautan</h3>
+            <h3 class="font-semibold text-xl mb-5">Links</h3>
             <ul class="text-black">
               <li>
                 <a
@@ -1237,7 +1197,7 @@
             </ul>
           </div>
           <div class="w-full px-4 mb-12 md:w-1/3">
-            <h3 class="font-semibold text-xl text-white mb-5">Follow Me:</h3>
+            <h3 class="font-semibold text-xl  mb-5">Connect With Us</h3>
             <div class="flex items-center">
               <a
                 href="https://www.youtube.com/channel/UCwmrQS1oCZfREPg3rwTH7Tg/featured"
@@ -1316,10 +1276,10 @@
         </div>
         <!-- Made by love -->
         <div
-          class="py-8 border-t border-cyan-800 text-black flex justify-between"
+          class="py-8 border-t border-cyan-800 text-black flex justify-center"
         >
-          <span>&copy; Tuker.in 2022</span>
-          <span>All right reserved</span>
+          <span class="pr-1">Copyright&copy;2022 All right reserved <span>|</span></span>
+          <span>Ananda Mentari</span>
         </div>
       </div>
     </footer>
@@ -1332,4 +1292,5 @@
   <script>
     AOS.init();
   </script>
+  <script></script>
 </html>
