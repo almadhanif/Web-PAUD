@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family:'BubbleRainbow';
+    src:local('BubbleRainbow') url("aset/font/BubbleRainbow.ttf") format('ttf');
+}
 .bg-login-glass{
     @apply bg-teal-400 bg-opacity-80;
     backdrop-filter :blur(5px);

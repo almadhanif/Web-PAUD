@@ -12,6 +12,7 @@ module.exports = {
           terang: "#8CBAB4",
           navcolor : "#B3D1CD",
         },
+        
       },
     },
     plugins: [],
