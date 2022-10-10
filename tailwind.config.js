@@ -8,8 +8,8 @@ module.exports = {
         },
         colors: {
           darkblue: "#25316D",
-          ijo: "#418C60",
           
+          ijo: "#71A72D",
           darkijo: "#3D6660",
           ijoterang: "#66A399",
           gelap: "#ob2027",
