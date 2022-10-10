@@ -2,6 +2,10 @@ module.exports = {
     content: ['index.html'],
     theme: {
       extend: {
+        fontFamily:{
+          'buble' : ['BubbleRainbow'],
+          'movable' : ['movable'],
+        },
         colors: {
           darkblue: "#25316D",
           ijo: "#418C60",
