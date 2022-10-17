@@ -14,6 +14,10 @@
     />
     <!-- Dropdown -->
     <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css"
+    />
 
     <!-- Slick.css -->
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
@@ -238,62 +242,133 @@
     <!-- Header end -->
     <!-- Hero section start -->
     <section id="home">
-      <div class="relative">
-        <ul class="slider">
-          <li class="h-[90vh] md:h-[91vh] lg:h-[95vh] bg-gray-200 relative">
+      <div id="default-carousel" class="relative lg:sticky" data-carousel="static">
+        <!-- Carousel wrapper -->
+        <div class="sticky h-96 overflow-hidden rounded-lg ">
+          <!-- Item 1 -->
+          <div
+            class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
+            data-carousel-item=""
+          >
+            <span
+              class="absolute text-2xl font-semibold text-black -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl dark:text-gray-800"
+              >First Slide</span
+            >
             <img
-              class="w-full h-full bg-cover bg-no-repeat"
-              src="aset/bg-login.png"
-              alt=""
+              src="aset/teaparty/photo_tea_1.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
             />
-            <div class="relative">
-              <h1
-                class="font-patrick absolute text-4xl bottom-36 md:bottom-32 lg:bottom-36 left-1/2 -translate-x-1/2 font-normal text-white mx-auto text-center bg-hijaumuda p-2 rounded-md"
-              >
-                Title disini nih
-              </h1>
-            </div>
-          </li>
-          <li
-            class="h-[90vh] md:h-[91vh] lg:h-[95vh] bg-gray-200 relative hidden"
+          </div>
+          <!-- Item 2 -->
+          <div
+            class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10"
+            data-carousel-item=""
           >
             <img
-              class="w-full h-full bg-cover bg-no-repeat"
-              src="aset/bg-batik.jpeg"
-              alt=""
+              src="aset/teaparty/photo_tea_2.jpg"
+              class="absolute bg-cover block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
             />
-            <div class="relative">
-              <h1
-                class="absolute text-4xl bottom-36 md:bottom-32 lg:bottom-36 left-1/2 -translate-x-1/2 font-normal text-white mx-auto text-center bg-hijaumuda p-2 rounded-md"
-              >
-                Title disini nih
-              </h1>
-            </div>
-          </li>
-          <li
-            class="h-[90vh] md:h-[91vh] lg:h-[95vh] bg-gray-200 relative hidden"
+          </div>
+          <!-- Item 3 -->
+          <div
+            class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10"
+            data-carousel-item=""
           >
             <img
-              class="w-full h-full bg-cover bg-no-repeat"
-              src="aset/bg-maintenance.png"
-              alt=""
+              src="aset/teaparty/photo_tea_3.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
             />
-            <div class="relative">
-              <h1
-                class="absolute text-4xl bottom-36 md:bottom-32 lg:bottom-36 left-1/2 -translate-x-1/2 font-normal text-white mx-auto text-center bg-hijaumuda p-2 rounded-md"
-              >
-                Title disini nih
-              </h1>
-            </div>
-          </li>
-        </ul>
+          </div>
+        </div>
+        <!-- Slider indicators -->
+        <div
+          class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2"
+        >
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full bg-white dark:bg-gray-800"
+            aria-current="true"
+            aria-label="Slide 1"
+            data-carousel-slide-to="0"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+            aria-current="false"
+            aria-label="Slide 2"
+            data-carousel-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+            aria-current="false"
+            aria-label="Slide 3"
+            data-carousel-slide-to="2"
+          ></button>
+        </div>
+        <!-- Slider controls -->
+        <button
+          type="button"
+          class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev=""
+        >
+          <span
+            class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              aria-hidden="true"
+              class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              ></path>
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next=""
+        >
+          <span
+            class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              aria-hidden="true"
+              class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
       </div>
     </section>
     <!-- Hero section end -->
 
     <!-- About section start -->
-    <section id="about" class="bg-opacity-80 backdrop-blur-2xl">
-      <div class="container1">
+    <section id="about" >
+      <div class="w-full">
         <div class="w-full flex flex-wrap">
           <div
             class="transition ease-in-out duration-200 hover:shadow-xl w-full h-[27rem] shadow-lg bg-ijo mx-auto lg:w-1/4 px-14 pt-8 pb-32 relative"
@@ -420,7 +495,11 @@
                     <div
                       class="w-[60%] lg:w-1/3 mr-5 flex justify-center items-center"
                     >
-                      <img src="aset/1.png" alt="icon 3" class="w-full h-full" />
+                      <img
+                        src="aset/1.png"
+                        alt="icon 3"
+                        class="w-full h-full"
+                      />
                     </div>
                     <div class="container">
                       <h2 class="flex text-slate-200 font-bold text-3xl pb-2">
@@ -437,7 +516,11 @@
                     <div
                       class="w-[60%] lg:w-1/3 mr-5 flex justify-center items-center"
                     >
-                      <img src="aset/2.png" alt="icon 2" class="w-full h-full" />
+                      <img
+                        src="aset/2.png"
+                        alt="icon 2"
+                        class="w-full h-full"
+                      />
                     </div>
                     <div class="container">
                       <h2 class="flex text-slate-200 font-bold text-3xl pb-2">
@@ -454,7 +537,11 @@
                     <div
                       class="w-[60%] lg:w-1/3 mr-5 flex justify-center items-center"
                     >
-                      <img src="aset/3.png" alt="icon 3" class="w-full h-full" />
+                      <img
+                        src="aset/3.png"
+                        alt="icon 3"
+                        class="w-full h-full"
+                      />
                     </div>
                     <div class="container">
                       <h2 class="flex text-slate-200 font-bold text-3xl pb-2">
@@ -475,19 +562,23 @@
       </div>
     </section>
     <svg
-            data-name="Layer 1"
-            class="bg-[#4CA9D8]"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-            style="
-                opacity: 1;
-                width: 100%;
-                height: 40px;
-                fill: #76ae3c;
-                transform: rotateY(0deg);">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
-        </svg>
+      data-name="Layer 1"
+      class="bg-[#4CA9D8]"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1200 120"
+      preserveAspectRatio="none"
+      style="
+        opacity: 1;
+        width: 100%;
+        height: 40px;
+        fill: #76ae3c;
+        transform: rotateY(0deg);
+      "
+    >
+      <path
+        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+      ></path>
+    </svg>
     <!-- Hero Start end -->
 
     <!-- fasilitas sekolah start -->
@@ -507,15 +598,35 @@
             <div class="w-full h-full">
               <!-- graph -->
               <div
-                class="shadow-lg bg-kuning hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md  transition ease-in-out duration-200"
+                class="shadow-lg bg-kuning hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md transition ease-in-out duration-200"
+              >
+                <!-- text header -->
+                <div>
+                  <img
+                    src="aset/teaparty/photo_tea_1.jpg"
+                    alt="Bermain di taman"
+                  />
+
+                  <h5 class="font-inter text-2xl text-black text-center mt-4">
+                    Playgroun
+                  </h5>
+                </div>
+                <!-- text header end -->
+              </div>
+            </div>
+          </div>
+          <div class="md:col-span-2 lg:col-span-1 my-5">
+            <!-- button start -->
+            <div class="w-full h-full">
+              <!-- graph -->
+              <div
+                class="shadow-lg bg-kuning hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md transition ease-in-out duration-200"
               >
                 <!-- text header -->
                 <div>
                   <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
 
-                  <h5
-                    class="font-inter text-2xl text-black text-center mt-4"
-                  >
+                  <h5 class="font-inter text-2xl text-black text-center mt-4">
                     Playground
                   </h5>
                 </div>
@@ -534,9 +645,7 @@
                 <div>
                   <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
 
-                  <h5
-                    class="font-inter text-2xl text-black text-center mt-4"
-                  >
+                  <h5 class="font-inter text-2xl text-black text-center mt-4">
                     Playground
                   </h5>
                 </div>
@@ -549,36 +658,13 @@
             <div class="w-full h-full">
               <!-- graph -->
               <div
-                class="shadow-lg bg-kuning hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md  transition ease-in-out duration-200"
+                class="shadow-lg bg-kuning hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md transition ease-in-out duration-200"
               >
                 <!-- text header -->
                 <div>
                   <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
 
-                  <h5
-                    class="font-inter text-2xl text-black text-center mt-4"
-                  >
-                    Playground
-                  </h5>
-                </div>
-                <!-- text header end -->
-              </div>
-            </div>
-          </div>
-          <div class="md:col-span-2 lg:col-span-1 my-5">
-            <!-- button start -->
-            <div class="w-full h-full">
-              <!-- graph -->
-              <div
-                class="shadow-lg bg-kuning hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md  transition ease-in-out duration-200"
-              >
-                <!-- text header -->
-                <div>
-                  <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
-
-                  <h5
-                    class="font-inter text-2xl text-black text-center mt-4"
-                  >
+                  <h5 class="font-inter text-2xl text-black text-center mt-4">
                     Playground
                   </h5>
                 </div>
@@ -594,15 +680,13 @@
             <div class="w-full h-full">
               <!-- graph -->
               <div
-                class="shadow-lg bg-kuning hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md  transition ease-in-out duration-200"
+                class="shadow-lg bg-kuning hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md transition ease-in-out duration-200"
               >
                 <!-- text header -->
                 <div>
                   <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
 
-                  <h5
-                    class="font-inter text-2xl text-black text-center mt-4"
-                  >
+                  <h5 class="font-inter text-2xl text-black text-center mt-4">
                     Playground
                   </h5>
                 </div>
@@ -615,15 +699,13 @@
             <div class="w-full h-full">
               <!-- graph -->
               <div
-                class="shadow-lg bg-kuning hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md  transition ease-in-out duration-200"
+                class="shadow-lg bg-kuning hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md transition ease-in-out duration-200"
               >
                 <!-- text header -->
                 <div>
                   <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
 
-                  <h5
-                    class="font-inter text-2xl text-black text-center mt-4"
-                  >
+                  <h5 class="font-inter text-2xl text-black text-center mt-4">
                     Playground
                   </h5>
                 </div>
@@ -636,15 +718,13 @@
             <div class="w-full h-full">
               <!-- graph -->
               <div
-                class="shadow-lg bg-kuning hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md  transition ease-in-out duration-200"
+                class="shadow-lg bg-kuning hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md transition ease-in-out duration-200"
               >
                 <!-- text header -->
                 <div>
                   <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
 
-                  <h5
-                    class="font-inter text-2xl text-black text-center mt-4"
-                  >
+                  <h5 class="font-inter text-2xl text-black text-center mt-4">
                     Playground
                   </h5>
                 </div>
@@ -657,15 +737,13 @@
             <div class="w-full h-full">
               <!-- graph -->
               <div
-                class="shadow-lg bg-kuning hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md  transition ease-in-out duration-200"
+                class="shadow-lg bg-kuning hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md transition ease-in-out duration-200"
               >
                 <!-- text header -->
                 <div>
                   <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
 
-                  <h5
-                    class="font-inter text-2xl text-black text-center mt-4"
-                  >
+                  <h5 class="font-inter text-2xl text-black text-center mt-4">
                     Playground
                   </h5>
                 </div>
@@ -682,15 +760,13 @@
             <div class="w-full h-full">
               <!-- graph -->
               <div
-                class="shadow-lg bg-kuning hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md  transition ease-in-out duration-200"
+                class="shadow-lg bg-kuning hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md transition ease-in-out duration-200"
               >
                 <!-- text header -->
                 <div>
                   <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
 
-                  <h5
-                    class="font-inter text-2xl text-black text-center mt-4"
-                  >
+                  <h5 class="font-inter text-2xl text-black text-center mt-4">
                     Playground
                   </h5>
                 </div>
@@ -703,15 +779,13 @@
             <div class="w-full h-full">
               <!-- graph -->
               <div
-                class="shadow-lg bg-kuning hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md  transition ease-in-out duration-200"
+                class="shadow-lg bg-kuning hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md transition ease-in-out duration-200"
               >
                 <!-- text header -->
                 <div>
                   <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
 
-                  <h5
-                    class="font-inter text-2xl text-black text-center mt-4"
-                  >
+                  <h5 class="font-inter text-2xl text-black text-center mt-4">
                     Playground
                   </h5>
                 </div>
@@ -724,15 +798,13 @@
             <div class="w-full h-full">
               <!-- graph -->
               <div
-                class="shadow-lg bg-kuning hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md  transition ease-in-out duration-200"
+                class="shadow-lg bg-kuning hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md transition ease-in-out duration-200"
               >
                 <!-- text header -->
                 <div>
                   <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
 
-                  <h5
-                    class="font-inter text-2xl text-black text-center mt-4"
-                  >
+                  <h5 class="font-inter text-2xl text-black text-center mt-4">
                     Playground
                   </h5>
                 </div>
@@ -745,15 +817,13 @@
             <div class="w-full h-full">
               <!-- graph -->
               <div
-                class="shadow-lg bg-kuning hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md  transition ease-in-out duration-200"
+                class="shadow-lg bg-kuning hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md transition ease-in-out duration-200"
               >
                 <!-- text header -->
                 <div>
                   <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
 
-                  <h5
-                    class="font-inter text-2xl text-black text-center mt-4"
-                  >
+                  <h5 class="font-inter text-2xl text-black text-center mt-4">
                     Playground
                   </h5>
                 </div>
@@ -766,24 +836,25 @@
       </div>
     </section>
     <!-- Fasilitas sekolah end -->
+
     <div
       style="background-image: url('aset/class.png')"
-      class="bg-cover bg-fixed w-full flex h-[50vh] hover:shadow-xl py-3 px-3 rounded-md border border-gray-200"
+      class="bg-cover bg-fixed w-full flex h-[50vh] hover:shadow-xl rounded-md border border-gray-200"
     >
       <!-- text header -->
       <div
         class="w-full h-full p-20 pt-16 overflow-y-scroll my-auto backdrop-blur-sm bg-white/40"
       >
-        <h3 class="font-kaisei text-4xl font-bold text-center pb-5">
+        <h3 class="font-kaisei text-2xl lg:text-4xl font-bold text-center pb-5">
           Welcome to Ananda Mentari
         </h3>
-        <p class="font-sans text-xl text-center">
+        <p class="font-sans text-base lg:text-xl text-center">
           Budi Mulia Dua (BMD) adalah sekolah Islam, Bilingual, yang bertaraf
           Internasional. Kurikulum di Budi Mulia Dua terdiri dari Cambridge,
           Nasional, Islamic Montessori, dan Kurikulum Budi Mulia Dua yang
           dikembangkan oleh tim dan guru-guru di Budi Mulia Dua.
         </p>
-        <p class="font-sans text-xl text-center">
+        <p class="font-sans text-base lg:text-xl text-center">
           DUA di Budi Mulia Dua berarti DUnia Akhirat. Tujuan Budi Mulia Dua
           (BMD) didirikan adalah untuk menjadi sarana kita yang berkecimpung di
           BMD untuk menabung amal dan ibadah di Dunia ini, untuk tabungan pahala
@@ -799,7 +870,7 @@
         class="text-kuning mx-auto mb-2 mt-10 font-inter font-bold text-3xl md:text-3xl lg:5xl"
         data-aos="fade-up"
       >
-        School <span class="text-hijaumuda">Facility</span>
+        School <span class="text-hijaumuda">Extracurricular</span>
       </h3>
     </div>
     <div class="container">
@@ -1302,19 +1373,5 @@
   <script>
     AOS.init();
   </script>
-  <script
-    type="text/javascript"
-    src="//code.jquery.com/jquery-1.11.0.min.js"
-  ></script>
-
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $(".slider").slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-      });
-    });
-  </script>
+  <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
 </html>
