@@ -12,6 +12,9 @@
       href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Dropdown -->
+    <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
+
     <!-- Slick.css -->
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
@@ -133,13 +136,78 @@
                     >Home</a
                   >
                 </li>
-                <li class="group">
-                  <a
-                    href="#about"
-                    class="text-base text-dark py-2 px-3 mx-4 flex group-hover:text-black group-hover:bg-hijaumuda rounded-md transition delay-50"
-                    >About</a
+
+                <button
+                  id="dropdownUsersButton"
+                  data-dropdown-toggle="dropdownUsers"
+                  data-dropdown-placement="bottom"
+                  class="text-base text-dark hover:bg-kuning focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg py-2 px-3 mx-4 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  type="button"
+                >
+                  About
+                  <svg
+                    class="ml-2 w-4 h-4"
+                    aria-hidden="true"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                </li>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdownUsers"
+                  class="hidden z-5 w-60 bg-white rounded shadow"
+                  data-popper-reference-hidden=""
+                  data-popper-escaped=""
+                  data-popper-placement="bottom"
+                  style="
+                    position: absolute;
+                    inset: 0px auto auto 0px;
+                    transform: translate3d(0px, 410.4px, 0px);
+                  "
+                >
+                  <ul
+                    class="overflow-y-auto py-1 h-32 text-gray-700 dark:text-gray-200"
+                    aria-labelledby="dropdownUsersButton"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >
+                        <img
+                          class="mr-2 w-10 h-10 rounded-full"
+                          src="aset/avatar1.svg"
+                          alt="Jese image"
+                        />
+                        Founder
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >
+                        <img
+                          class="mr-2 w-10 h-10 rounded-full"
+                          src="aset/avatar1.svg"
+                          alt="Jese image"
+                        />
+                        philosophy
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
                 <li class="group">
                   <a
                     href="#galery"
