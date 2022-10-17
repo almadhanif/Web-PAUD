@@ -39,6 +39,9 @@ hamburger.addEventListener('click', function() {
     sideBar.classList.toggle('left-[-300px]');
 });
 
+
+
+
 //submit
 document.getElementById("submit").onclick = function () {
     page.href = "#index.html";
