@@ -96,23 +96,88 @@
               <ul class="block lg:flex">
                 <li class="group">
                   <a
-                    href="#home"
-                    class="text-base text-dark py-2 px-3 mx-4 flex group-hover:text-black group-hover:bg-kuning rounded-md transition delay-50"
+                    href="index.html"
+                    class="text-base bg-hijaumuda text-white py-2 px-3 mx-4 flex group-hover:text-black group-hover:bg-kuning rounded-md transition delay-50"
                     >Home</a
                   >
                 </li>
-                <li class="group">
-                  <a
-                    href="#fitur"
-                    class="text-base text-dark py-2 px-3 mx-4 flex group-hover:text-black group-hover:bg-hijaumuda rounded-md transition delay-50"
-                    >About</a
+
+                <button
+                  id="dropdownUsersButton"
+                  data-dropdown-toggle="dropdownUsers"
+                  data-dropdown-placement="bottom"
+                  class="text-base text-dark hover:bg-kuning focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg py-2 px-3 mx-4 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  type="button"
+                >
+                  About
+                  <svg
+                    class="ml-2 w-4 h-4"
+                    aria-hidden="true"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                </li>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdownUsers"
+                  class="hidden z-5 w-60 bg-white rounded shadow"
+                  data-popper-reference-hidden=""
+                  data-popper-escaped=""
+                  data-popper-placement="bottom"
+                  style="
+                    position: absolute;
+                    inset: 0px auto auto 0px;
+                    transform: translate3d(0px, 410.4px, 0px);
+                  "
+                >
+                  <ul
+                    class="overflow-y-auto py-1 h-32 text-gray-700 dark:text-gray-200"
+                    aria-labelledby="dropdownUsersButton"
+                  >
+                    <li>
+                      <a
+                        href="Founder.html"
+                        class="flex items-center py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >
+                        <img
+                          class="mr-2 w-10 h-10 rounded-full"
+                          src="aset/avatar1.svg"
+                          alt="Jese image"
+                        />
+                        Founder
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="Filosofi.html"
+                        class="flex items-center py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >
+                        <img
+                          class="mr-2 w-10 h-10 rounded-full"
+                          src="aset/avatar1.svg"
+                          alt="Jese image"
+                        />
+                        Philosophy
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
                 <li class="group">
                   <a
-                    href="#about"
+                    href="#galery"
                     class="text-base text-dark py-2 px-3 mx-4 flex group-hover:text-black group-hover:bg-hijaumuda rounded-md transition delay-50"
-                    >Facility</a
+                    >Galery</a
                   >
                 </li>
                 <li class="group">
@@ -124,7 +189,7 @@
                 </li>
                 <li class="group">
                   <a
-                    href="#kontak"
+                    href="contact.html"
                     class="text-base text-dark py-2 px-3 mx-4 flex group-hover:text-black group-hover:bg-kuning rounded-md transition delay-50"
                     >Contact</a
                   >
@@ -136,6 +201,7 @@
       </div>
     </header>
     <!-- Header end -->
+
     <!-- Hero section start -->
     <section
       id="home"
@@ -226,7 +292,6 @@
               >
             </div>
           </div>
-          
         </div>
 
         <div class="py-20 w-full">
@@ -264,9 +329,7 @@
                 />
                 <div>
                   <h4 class="text-xl">Endang Lestari</h4>
-                  <span class="block text-sm text-gray-500"
-                    >Guru kelas</span
-                  >
+                  <span class="block text-sm text-gray-500">Guru kelas</span>
                 </div>
               </div>
               <div class="space-y-4 text-center">
@@ -280,9 +343,7 @@
                 />
                 <div>
                   <h4 class="text-xl">Hermin Sriharjanti</h4>
-                  <span class="block text-sm text-gray-500"
-                    >Guru kelas</span
-                  >
+                  <span class="block text-sm text-gray-500">Guru kelas</span>
                 </div>
               </div>
             </div>
@@ -341,7 +402,9 @@
                 />
                 <div>
                   <h4 class="text-xl">Ria Krisnawati</h4>
-                  <span class="block text-sm text-gray-500">Administrasi dan Front Officer</span>
+                  <span class="block text-sm text-gray-500"
+                    >Administrasi dan Front Officer</span
+                  >
                 </div>
               </div>
               <div class="space-y-4 text-center">
@@ -355,9 +418,7 @@
                 />
                 <div>
                   <h4 class="text-xl">Iswandari</h4>
-                  <span class="block text-sm text-gray-500"
-                    >Rumah tangga</span
-                  >
+                  <span class="block text-sm text-gray-500">Rumah tangga</span>
                 </div>
               </div>
               <div class="space-y-4 text-center">
@@ -371,53 +432,45 @@
                 />
                 <div>
                   <h4 class="text-xl">Leonita Indria Widianingrum</h4>
-                  <span class="block text-sm text-gray-500"
-                    >Humas</span
-                  >
+                  <span class="block text-sm text-gray-500">Humas</span>
                 </div>
               </div>
             </div>
           </div>
-          
         </div>
       </div>
     </div>
-
-
   </body>
 
   <svg
-  
-  class="bg-gray-50"
-      id="wave"
-      style="transform: rotate(0deg); transition: 0.3s"
-      viewBox="0 0 1440 110"
-      version="1.1"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <defs>
-        <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-          <stop stop-color="rgba(76, 169, 216, 1)" offset="0%"></stop>
-          <stop
-            stop-color="rgba(121.937, 190.913, 225.772, 1)"
-            offset="100%"
-          ></stop>
-        </linearGradient>
-      </defs>
-      <path
-        style="transform: translate(0, 0px); opacity: 1"
-        fill="url(#sw-gradient-0)"
-        d="M0,55L40,49.5C80,44,160,33,240,40.3C320,48,400,73,480,73.3C560,73,640,48,720,36.7C800,26,880,29,960,36.7C1040,44,1120,55,1200,53.2C1280,51,1360,37,1440,33C1520,29,1600,37,1680,34.8C1760,33,1840,22,1920,29.3C2000,37,2080,62,2160,67.8C2240,73,2320,59,2400,55C2480,51,2560,59,2640,62.3C2720,66,2800,66,2880,66C2960,66,3040,66,3120,64.2C3200,62,3280,59,3360,58.7C3440,59,3520,62,3600,53.2C3680,44,3760,22,3840,22C3920,22,4000,44,4080,49.5C4160,55,4240,44,4320,40.3C4400,37,4480,40,4560,45.8C4640,51,4720,59,4800,51.3C4880,44,4960,22,5040,14.7C5120,7,5200,15,5280,18.3C5360,22,5440,22,5520,18.3C5600,15,5680,7,5720,3.7L5760,0L5760,110L5720,110C5680,110,5600,110,5520,110C5440,110,5360,110,5280,110C5200,110,5120,110,5040,110C4960,110,4880,110,4800,110C4720,110,4640,110,4560,110C4480,110,4400,110,4320,110C4240,110,4160,110,4080,110C4000,110,3920,110,3840,110C3760,110,3680,110,3600,110C3520,110,3440,110,3360,110C3280,110,3200,110,3120,110C3040,110,2960,110,2880,110C2800,110,2720,110,2640,110C2560,110,2480,110,2400,110C2320,110,2240,110,2160,110C2080,110,2000,110,1920,110C1840,110,1760,110,1680,110C1600,110,1520,110,1440,110C1360,110,1280,110,1200,110C1120,110,1040,110,960,110C880,110,800,110,720,110C640,110,560,110,480,110C400,110,320,110,240,110C160,110,80,110,40,110L0,110Z"
-      ></path>
-    </svg>
+    class="bg-gray-50"
+    id="wave"
+    style="transform: rotate(0deg); transition: 0.3s"
+    viewBox="0 0 1440 110"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <defs>
+      <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+        <stop stop-color="rgba(76, 169, 216, 1)" offset="0%"></stop>
+        <stop
+          stop-color="rgba(121.937, 190.913, 225.772, 1)"
+          offset="100%"
+        ></stop>
+      </linearGradient>
+    </defs>
+    <path
+      style="transform: translate(0, 0px); opacity: 1"
+      fill="url(#sw-gradient-0)"
+      d="M0,55L40,49.5C80,44,160,33,240,40.3C320,48,400,73,480,73.3C560,73,640,48,720,36.7C800,26,880,29,960,36.7C1040,44,1120,55,1200,53.2C1280,51,1360,37,1440,33C1520,29,1600,37,1680,34.8C1760,33,1840,22,1920,29.3C2000,37,2080,62,2160,67.8C2240,73,2320,59,2400,55C2480,51,2560,59,2640,62.3C2720,66,2800,66,2880,66C2960,66,3040,66,3120,64.2C3200,62,3280,59,3360,58.7C3440,59,3520,62,3600,53.2C3680,44,3760,22,3840,22C3920,22,4000,44,4080,49.5C4160,55,4240,44,4320,40.3C4400,37,4480,40,4560,45.8C4640,51,4720,59,4800,51.3C4880,44,4960,22,5040,14.7C5120,7,5200,15,5280,18.3C5360,22,5440,22,5520,18.3C5600,15,5680,7,5720,3.7L5760,0L5760,110L5720,110C5680,110,5600,110,5520,110C5440,110,5360,110,5280,110C5200,110,5120,110,5040,110C4960,110,4880,110,4800,110C4720,110,4640,110,4560,110C4480,110,4400,110,4320,110C4240,110,4160,110,4080,110C4000,110,3920,110,3840,110C3760,110,3680,110,3600,110C3520,110,3440,110,3360,110C3280,110,3200,110,3120,110C3040,110,2960,110,2880,110C2800,110,2720,110,2640,110C2560,110,2480,110,2400,110C2320,110,2240,110,2160,110C2080,110,2000,110,1920,110C1840,110,1760,110,1680,110C1600,110,1520,110,1440,110C1360,110,1280,110,1200,110C1120,110,1040,110,960,110C880,110,800,110,720,110C640,110,560,110,480,110C400,110,320,110,240,110C160,110,80,110,40,110L0,110Z"
+    ></path>
+  </svg>
   <!-- Footer section start-->
   <footer class="pt-12 pb-12 bg-[#5BBFF2]">
     <div class="container">
       <div class="flex flex-wrap" data-aos="fade-up" data-aos-duration="2000">
         <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
-          <h3 class="font-bold text-2xl mb-2 text-slate-200">
-            Any Question?
-          </h3>
+          <h3 class="font-bold text-2xl mb-2 text-slate-200">Any Question?</h3>
           <a
             class="flex flex-wrap hover:text-slate-500 mt-5"
             aria-label="Maps"
