@@ -18,20 +18,11 @@
       rel="stylesheet"
       href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css"
     />
-
-    <!-- Slick.css -->
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.6.1.min.js"
-      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-      crossorigin="anonymous"
-    ></script>
-
+    <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500;700&family=Peralta&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Fuzzy+Bubbles:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
@@ -42,13 +33,7 @@
       rel="stylesheet"
     />
 
-    <!-- Font Header Patrick -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
-      rel="stylesheet"
-    />
+
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -62,8 +47,8 @@
           },
           extend: {
             colors: {
-              hijaumuda: "#8ac926",
-              hijautua: "#137547",
+              hijaumuda: "#94EC08",
+              hijautua: "#98E51E",
               kuning: "#F4C447",
               darkblue: "#25316D",
               biru: "#24DCF2",
@@ -72,11 +57,10 @@
               terang: "#8CBAB4",
             },
             fontFamily: {
-              patrick: ["Patrick Hand"],
-              buble: ["BubbleRainbow"],
+              caveat : ["Caveat Brush"],
+              fuzzy : ["Fuzzy Bubbles"],
               peralta: ["Peralta"],
               inter: ["Inter"],
-              kaisei: ["Kaisei"],
             },
             screens: {
               "2xl": "1320px",
@@ -136,7 +120,7 @@
                 <li class="group">
                   <a
                     href="index.html"
-                    class="text-base bg-hijaumuda text-white py-2 px-3 mx-4 flex group-hover:text-black group-hover:bg-kuning rounded-md transition delay-50"
+                    class="text-base bg-hijaumuda text-black py-2 px-3 mx-4 flex group-hover:text-black group-hover:bg-hijautua rounded-md transition delay-50"
                     >Home</a
                   >
                 </li>
@@ -145,7 +129,7 @@
                   id="dropdownUsersButton"
                   data-dropdown-toggle="dropdownUsers"
                   data-dropdown-placement="bottom"
-                  class="text-base text-dark hover:bg-kuning focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg py-2 px-3 mx-4 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  class="text-base text-dark hover:bg-hijautua focus:ring-4 focus:outline-none focus:ring-biru rounded-lg py-2 px-3 mx-4 text-center inline-flex items-center"
                   type="button"
                 >
                   About
@@ -185,7 +169,7 @@
                     <li>
                       <a
                         href="Founder.html"
-                        class="flex items-center py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        class="flex items-center py-2 px-4 hover:bg-hijautua"
                       >
                         <img
                           class="mr-2 w-10 h-10 rounded-full"
@@ -199,7 +183,7 @@
                     <li>
                       <a
                         href="Filosofi.html"
-                        class="flex items-center py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        class="flex items-center py-2 px-4 hover:bg-hijautua"
                       >
                         <img
                           class="mr-2 w-10 h-10 rounded-full"
@@ -215,21 +199,21 @@
                 <li class="group">
                   <a
                     href="#galery"
-                    class="text-base text-dark py-2 px-3 mx-4 flex group-hover:text-black group-hover:bg-hijaumuda rounded-md transition delay-50"
+                    class="text-base text-dark py-2 px-3 mx-4 flex group-hover:text-black group-hover:bg-hijautua rounded-md transition delay-50"
                     >Galery</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#about"
-                    class="text-base text-dark py-2 px-3 mx-4 flex group-hover:text-black group-hover:bg-hijaumuda rounded-md transition delay-50"
+                    class="text-base text-dark py-2 px-3 mx-4 flex group-hover:text-black group-hover:bg-hijautua rounded-md transition delay-50"
                     >Events</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="contact.html"
-                    class="text-base text-dark py-2 px-3 mx-4 flex group-hover:text-black group-hover:bg-kuning rounded-md transition delay-50"
+                    class="text-base text-dark py-2 px-3 mx-4 flex group-hover:text-black group-hover:bg-hijautua rounded-md transition delay-50"
                     >Contact</a
                   >
                 </li>
@@ -241,10 +225,14 @@
     </header>
     <!-- Header end -->
     <!-- Hero section start -->
-    <section id="home">
-      <div id="default-carousel" class="relative lg:sticky" data-carousel="static">
+    <section id="carousel">
+      <div
+        id="default-carousel"
+        class="sticky lg:sticky"
+        data-carousel="static"
+      >
         <!-- Carousel wrapper -->
-        <div class="sticky h-96 overflow-hidden rounded-lg ">
+        <div class="sticky h-64 lg:h-screen overflow-hidden">
           <!-- Item 1 -->
           <div
             class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
@@ -256,8 +244,8 @@
             >
             <img
               src="aset/teaparty/photo_tea_1.jpg"
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
+              class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="Foto pertama"
             />
           </div>
           <!-- Item 2 -->
@@ -280,6 +268,21 @@
               src="aset/teaparty/photo_tea_3.jpg"
               class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               alt="..."
+            />
+          </div>
+          <!-- Item 1 -->
+          <div
+            class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
+            data-carousel-item=""
+          >
+            <span
+              class="absolute text-2xl font-semibold text-black -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl dark:text-gray-800"
+              >First Slide</span
+            >
+            <img
+              src="aset/teaparty/photo_tea_1.jpg"
+              class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="Foto pertama"
             />
           </div>
         </div>
@@ -306,6 +309,13 @@
             class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
             aria-current="false"
             aria-label="Slide 3"
+            data-carousel-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+            aria-current="false"
+            aria-label="Slide 4"
             data-carousel-slide-to="2"
           ></button>
         </div>
@@ -367,16 +377,16 @@
     <!-- Hero section end -->
 
     <!-- About section start -->
-    <section id="about" >
+    <section id="about ">
       <div class="w-full">
         <div class="w-full flex flex-wrap">
           <div
-            class="transition ease-in-out duration-200 hover:shadow-xl w-full h-[27rem] shadow-lg bg-ijo mx-auto lg:w-1/4 px-14 pt-8 pb-32 relative"
+            class="transition ease-in-out duration-200 hover:shadow-xl w-full h-[27rem] shadow-lg bg-[#94EC08] mx-auto lg:w-1/4 px-14 pt-8 pb-32 relative"
           >
             <div class="flex absolute -top-20 left-1/2 -translate-x-1/2">
               <img src="./aset/icon-guru.png" class="w-44 lg:w-40" />
             </div>
-            <h2 class="font-inter font-bold mt-16 md:mt-8 lg:mt-16 text-2xl">
+            <h2 class="font-sans font-bold mt-16 md:mt-8 lg:mt-16 text-2xl">
               Tahun Berdiri
             </h2>
             <p class="font-serif">
@@ -384,7 +394,7 @@
             </p>
           </div>
           <div
-            class="transition ease-in-out duration-200 hover:shadow-xl w-full h-[27rem] shadow-lg bg-kuning mx-auto lg:w-1/4 px-14 pt-8 pb-32 relative"
+            class="transition ease-in-out duration-200 hover:shadow-xl w-full h-[27rem] shadow-lg bg-biru mx-auto lg:w-1/4 px-14 pt-8 pb-32 relative"
           >
             <div class="flex absolute -top-20 left-1/2 -translate-x-1/2">
               <img src="./aset/icon-kurikulum.png" class="w-44 lg:w-40" />
@@ -397,7 +407,7 @@
             </p>
           </div>
           <div
-            class="transition ease-in-out duration-200 hover:shadow-xl w-full h-[27rem] shadow-lg bg-ijo mx-auto lg:w-1/4 px-14 pt-8 pb-32 relative"
+            class="transition ease-in-out duration-200 hover:shadow-xl w-full h-[27rem] shadow-lg bg-hijaumuda mx-auto lg:w-1/4 px-14 pt-8 pb-32 relative"
           >
             <div class="flex absolute -top-20 left-1/2 -translate-x-1/2">
               <img src="./aset/icon-fasilitas.png" class="w-44 lg:w-40" />
@@ -410,7 +420,7 @@
             </p>
           </div>
           <div
-            class="transition ease-in-out duration-200 hover:shadow-xl w-full h-[27rem] shadow-lg bg-kuning mx-auto lg:w-1/4 px-14 pt-8 pb-32 relative"
+            class="transition ease-in-out duration-200 hover:shadow-xl w-full h-[27rem] shadow-lg bg-biru mx-auto lg:w-1/4 px-14 pt-8 pb-32 relative"
           >
             <div class="flex absolute -top-20 left-1/2 -translate-x-1/2">
               <img src="./aset/icon-guru.png" class="w-44 lg:w-40" />
@@ -426,14 +436,16 @@
       </div>
     </section>
     <!-- about section end -->
-    <div class="w-full">
+    <div class="w-full bg-cover bg-no-repeat"
+    style="background-image: url(aset/bg-transparent.png)">
+      
       <!-- text header -->
       <div class="pt-32 px-5 lg:px-40">
-        <h2 class="font-patrick text-5xl font-bold text-center text-biru">
+        <h2 class="font-fuzzy text-4xl font-bold text-center text-biru">
           Welcome To
         </h2>
         <h2
-          class="font-peralta text-5xl font-bold text-center pb-5 text-kuning"
+          class="font-caveat text-6xl font-bold text-center pb-5 text-kuning"
         >
           Ananda Mentari
         </h2>
@@ -455,24 +467,23 @@
           Your browser does not support the video tag.
         </video>
       </div>
-      <!-- text header end -->
-      <img src="aset/welcome.png" class="object-cover w-full" alt="" />
+      
     </div>
     <!-- Fitur section start -->
     <!-- Hero section start -->
-    <section class="sm:bg-cover sm:bg-no-repeat bg-ijo h-full w-full">
+    <section class="sm:bg-cover sm:bg-no-repeat h-full w-full">
       <div
-        class="relative before:absolute before:inset-0 before:w-full before:h-[50%] bg-[#76AE3C]"
+        class="relative before:absolute before:inset-0 before:w-full before:h-[50%] bg-biru"
       >
-        <div class="max-w-xl mx-auto text-center mb-16">
+        <div class="max-w-xl mx-auto text-center mb-5 lg:mb-8">
           <h2
-            class="mx-auto font-patrick text-3xl font-bold md:text-4xl lg:text-5xl mb-2 pt-10 text-slate-200"
+            class="mx-auto font-fuzzy text-4xl font-bold md:text-4xl lg:text-5xl mb-2 pt-10 text-slate-200"
             data-aos="fade-up"
           >
             Pilar
           </h2>
           <h2
-            class="mx-auto mb-2 text-[#F4C447] font-peralta font-bold text-3xl md:text-3xl lg:text-4xl"
+            class="mx-auto mb-2 text-black font-caveat font-bold text-4xl md:text-3xl lg:text-5xl"
             data-aos="fade-up"
           >
             Ananda Mentari
@@ -480,18 +491,18 @@
         </div>
         <div class="relative container m-auto px-6 md:px-12">
           <div class="m-auto space-y-8 md:w-8/12 lg:w-full">
-            <div class="rounded-xl bg-[#76AE3C]">
+            <div class="rounded-xl bg-biru">
               <div class="lg:grid lg:grid-cols-2">
                 <div class="rounded-lg lg:block" hidden>
                   <img
-                    src="aset/bg-sun1.png"
-                    class="rounded-l-xl object-cover"
+                    src="aset/mainlogo.png"
+                    class="rounded-l-xl mt-32 object-cover"
                     loading="lazy"
                     alt="background 3 Pilar"
                   />
                 </div>
                 <div class="p-6 sm:p-16">
-                  <div class="flex items-center w-full h-[30%]">
+                  <div class="flex items-center w-full h-[30%] mb-5 lg:mb-10">
                     <div
                       class="w-[60%] lg:w-1/3 mr-5 flex justify-center items-center"
                     >
@@ -502,17 +513,17 @@
                       />
                     </div>
                     <div class="container">
-                      <h2 class="flex text-slate-200 font-bold text-3xl pb-2">
+                      <h2 class="flex text-slate-200 font-caveat text-3xl pb-2">
                         Intelligent
                       </h2>
-                      <p class="flex text-slate-300 text-base">
+                      <p class="flex text-slate-100 text-base">
                         Untuk menabung amal dan ibadah di Dunia ini, untuk
                         tabungan pahala kita di Akhirat nanti.
                         (DUA:DuniaAkhirat).
                       </p>
                     </div>
                   </div>
-                  <div class="flex items-center w-full h-[30%]">
+                  <div class="flex items-center w-full h-[30%] mb-5 lg:mb-10">
                     <div
                       class="w-[60%] lg:w-1/3 mr-5 flex justify-center items-center"
                     >
@@ -523,10 +534,10 @@
                       />
                     </div>
                     <div class="container">
-                      <h2 class="flex text-slate-200 font-bold text-3xl pb-2">
+                      <h2 class="flex text-slate-200 font-caveat text-3xl pb-2">
                         Strong Character
                       </h2>
-                      <p class="flex text-slate-300 text-base">
+                      <p class="flex text-slate-100 text-base">
                         Untuk menabung amal dan ibadah di Dunia ini, untuk
                         tabungan pahala kita di Akhirat nanti.
                         (DUA:DuniaAkhirat).
@@ -544,10 +555,10 @@
                       />
                     </div>
                     <div class="container">
-                      <h2 class="flex text-slate-200 font-bold text-3xl pb-2">
+                      <h2 class="flex text-slate-200 font-caveat text-3xl pb-2">
                         Globally Oriented
                       </h2>
-                      <p class="flex text-slate-300 text-base">
+                      <p class="flex text-slate-100 text-base">
                         Untuk menabung amal dan ibadah di Dunia ini, untuk
                         tabungan pahala kita di Akhirat nanti.
                         (DUA:DuniaAkhirat).
@@ -571,7 +582,7 @@
         opacity: 1;
         width: 100%;
         height: 40px;
-        fill: #76ae3c;
+        fill: #24dcf2;
         transform: rotateY(0deg);
       "
     >
@@ -839,7 +850,7 @@
 
     <div
       style="background-image: url('aset/class.png')"
-      class="bg-cover bg-fixed w-full flex h-[50vh] hover:shadow-xl rounded-md border border-gray-200"
+      class="bg-cover bg-fixed w-full flex h-[60vh] hover:shadow-xl rounded-md border-gray-200"
     >
       <!-- text header -->
       <div
@@ -860,264 +871,307 @@
           BMD untuk menabung amal dan ibadah di Dunia ini, untuk tabungan pahala
           kita di Akhirat nanti. (DUA:DUniaAkhirat).
         </p>
+        <div class="w-full flex justify-center">
+          
+          <img src="aset/icon_teacher.png" class="flex mt-5 mr-2 w-16 h-16" alt="">
+          <p class="font-sans flex  text-base lg:text-3xl my-10 mr-10">
+            Jumlah Guru : 10
+          </p>
+          <img src="aset/icon_alumni.png" class="flex mt-5 mr-2 w-16 h-16" alt="">
+          <p class="font-sans flex  text-base lg:text-3xl my-10 mr-10">
+            Total Alumni : 251
+          </p>
+        </div>
+        
       </div>
       <!-- text header end -->
     </div>
 
     <!-- Ekstrakulikuler start -->
-    <div class="max-w-xl mx-auto text-center mb-16">
-      <h3
-        class="text-kuning mx-auto mb-2 mt-10 font-inter font-bold text-3xl md:text-3xl lg:5xl"
-        data-aos="fade-up"
-      >
-        School <span class="text-hijaumuda">Extracurricular</span>
-      </h3>
+    <section id="ekskul"
+    style="background-image:url(aset/bg-ekskul.png)"
+     class="w-full bg-cover bg-no-repeat  bg-hijaumuda">
+     <div class="w-full  bg-black/30">
+      <div class="max-w-xl mx-auto text-center mb-16 ">
+        <h3
+          class="text-white mx-auto mb-2 pt-10 font-caveat font-bold text-3xl md:text-3xl lg:text-5xl"
+          data-aos="fade-up"
+        >
+          School <span class="text-white">Extracurricular</span>
+        </h3>
+      </div>
+      <div class="container ">
+        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          <div class="md:col-span-2 lg:col-span-1 my-5">
+            <!-- button start -->
+            <div class="w-full h-full">
+              <!-- graph -->
+              <div
+                class="shadow-lg bg-slate-200 hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md border border-gray-200 transition ease-in-out duration-200"
+              >
+                <!-- text header -->
+                <div>
+                  <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
+
+                  <h5
+                    class="font-inter text-2xl text-gray-600 text-center mt-4"
+                  >
+                    Playground
+                  </h5>
+                </div>
+                <!-- text header end -->
+              </div>
+            </div>
+          </div>
+          <div class="md:col-span-2 lg:col-span-1 my-5">
+            <!-- button start -->
+            <div class="w-full h-full">
+              <!-- graph -->
+              <div
+                class="shadow-lg bg-slate-200 hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md border border-gray-200 transition ease-in-out duration-200"
+              >
+                <!-- text header -->
+                <div>
+                  <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
+
+                  <h5
+                    class="font-inter text-2xl text-gray-600 text-center mt-4"
+                  >
+                    Playground
+                  </h5>
+                </div>
+                <!-- text header end -->
+              </div>
+            </div>
+          </div>
+          <div class="md:col-span-2 lg:col-span-1 my-5">
+            <!-- button start -->
+            <div class="w-full h-full">
+              <!-- graph -->
+              <div
+                class="shadow-lg bg-slate-200 hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md border border-gray-200 transition ease-in-out duration-200"
+              >
+                <!-- text header -->
+                <div>
+                  <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
+
+                  <h5
+                    class="font-inter text-2xl text-gray-600 text-center mt-4"
+                  >
+                    Playground
+                  </h5>
+                </div>
+                <!-- text header end -->
+              </div>
+            </div>
+          </div>
+          <div class="md:col-span-2 lg:col-span-1 my-5">
+            <!-- button start -->
+            <div class="w-full h-full">
+              <!-- graph -->
+              <div
+                class="shadow-lg bg-slate-200 hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md border border-gray-200 transition ease-in-out duration-200"
+              >
+                <!-- text header -->
+                <div>
+                  <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
+
+                  <h5
+                    class="font-inter text-2xl text-gray-600 text-center mt-4"
+                  >
+                    Playground
+                  </h5>
+                </div>
+                <!-- text header end -->
+              </div>
+            </div>
+          </div>
+          <!-- 3 button end -->
+        </div>
+        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          <div class="md:col-span-2 lg:col-span-1 my-5">
+            <!-- button start -->
+            <div class="w-full h-full">
+              <!-- graph -->
+              <div
+                class="shadow-lg bg-slate-200 hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md border border-gray-200 transition ease-in-out duration-200"
+              >
+                <!-- text header -->
+                <div>
+                  <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
+
+                  <h5
+                    class="font-inter text-2xl text-gray-600 text-center mt-4"
+                  >
+                    Playground
+                  </h5>
+                </div>
+                <!-- text header end -->
+              </div>
+            </div>
+          </div>
+          <div class="md:col-span-2 lg:col-span-1 my-5">
+            <!-- button start -->
+            <div class="w-full h-full">
+              <!-- graph -->
+              <div
+                class="shadow-lg bg-slate-200 hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md border border-gray-200 transition ease-in-out duration-200"
+              >
+                <!-- text header -->
+                <div>
+                  <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
+
+                  <h5
+                    class="font-inter text-2xl text-gray-600 text-center mt-4"
+                  >
+                    Playground
+                  </h5>
+                </div>
+                <!-- text header end -->
+              </div>
+            </div>
+          </div>
+          <div class="md:col-span-2 lg:col-span-1 my-5">
+            <!-- button start -->
+            <div class="w-full h-full">
+              <!-- graph -->
+              <div
+                class="shadow-lg bg-slate-200 hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md border border-gray-200 transition ease-in-out duration-200"
+              >
+                <!-- text header -->
+                <div>
+                  <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
+
+                  <h5
+                    class="font-inter text-2xl text-gray-600 text-center mt-4"
+                  >
+                    Playground
+                  </h5>
+                </div>
+                <!-- text header end -->
+              </div>
+            </div>
+          </div>
+          <div class="md:col-span-2 lg:col-span-1 my-5">
+            <!-- button start -->
+            <div class="w-full h-full">
+              <!-- graph -->
+              <div
+                class="shadow-lg bg-slate-200 hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md border border-gray-200 transition ease-in-out duration-200"
+              >
+                <!-- text header -->
+                <div>
+                  <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
+
+                  <h5
+                    class="font-inter text-2xl text-gray-600 text-center mt-4"
+                  >
+                    Playground
+                  </h5>
+                </div>
+                <!-- text header end -->
+              </div>
+            </div>
+          </div>
+          <!-- 3 button end -->
+        </div>
+
+        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          <div class="md:col-span-2 lg:col-span-1 my-5">
+            <!-- button start -->
+            <div class="w-full h-full">
+              <!-- graph -->
+              <div
+                class="shadow-lg bg-slate-200 hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md border border-gray-200 transition ease-in-out duration-200"
+              >
+                <!-- text header -->
+                <div>
+                  <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
+
+                  <h5
+                    class="font-inter text-2xl text-gray-600 text-center mt-4"
+                  >
+                    Playground
+                  </h5>
+                </div>
+                <!-- text header end -->
+              </div>
+            </div>
+          </div>
+          <div class="md:col-span-2 lg:col-span-1 my-5">
+            <!-- button start -->
+            <div class="w-full h-full">
+              <!-- graph -->
+              <div
+                class="shadow-lg bg-slate-200 hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md border border-gray-200 transition ease-in-out duration-200"
+              >
+                <!-- text header -->
+                <div>
+                  <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
+
+                  <h5
+                    class="font-inter text-2xl text-gray-600 text-center mt-4"
+                  >
+                    Playground
+                  </h5>
+                </div>
+                <!-- text header end -->
+              </div>
+            </div>
+          </div>
+          <div class="md:col-span-2 lg:col-span-1 my-5">
+            <!-- button start -->
+            <div class="w-full h-full">
+              <!-- graph -->
+              <div
+                class="shadow-lg bg-slate-200 hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md border border-gray-200 transition ease-in-out duration-200"
+              >
+                <!-- text header -->
+                <div>
+                  <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
+
+                  <h5
+                    class="font-inter text-2xl text-gray-600 text-center mt-4"
+                  >
+                    Playground
+                  </h5>
+                </div>
+                <!-- text header end -->
+              </div>
+            </div>
+          </div>
+          <div class="md:col-span-2 lg:col-span-1 my-5">
+            <!-- button start -->
+            <div class="w-full h-full">
+              <!-- graph -->
+              <div
+                class="shadow-lg bg-slate-200 hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md border border-gray-200 transition ease-in-out duration-200"
+              >
+                <!-- text header -->
+                <div>
+                  <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
+
+                  <h5
+                    class="font-inter text-2xl text-gray-600 text-center mt-4"
+                  >
+                    Playground
+                  </h5>
+                </div>
+                <!-- text header end -->
+              </div>
+            </div>
+          </div>
+          <!-- 3 button end -->
+        </div>
+      </div>
     </div>
-    <div class="container">
-      <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-        <div class="md:col-span-2 lg:col-span-1 my-5">
-          <!-- button start -->
-          <div class="w-full h-full">
-            <!-- graph -->
-            <div
-              class="shadow-lg bg-slate-200 hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md border border-gray-200 transition ease-in-out duration-200"
-            >
-              <!-- text header -->
-              <div>
-                <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
-
-                <h5 class="font-inter text-2xl text-gray-600 text-center mt-4">
-                  Playground
-                </h5>
-              </div>
-              <!-- text header end -->
-            </div>
-          </div>
-        </div>
-        <div class="md:col-span-2 lg:col-span-1 my-5">
-          <!-- button start -->
-          <div class="w-full h-full">
-            <!-- graph -->
-            <div
-              class="shadow-lg bg-slate-200 hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md border border-gray-200 transition ease-in-out duration-200"
-            >
-              <!-- text header -->
-              <div>
-                <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
-
-                <h5 class="font-inter text-2xl text-gray-600 text-center mt-4">
-                  Playground
-                </h5>
-              </div>
-              <!-- text header end -->
-            </div>
-          </div>
-        </div>
-        <div class="md:col-span-2 lg:col-span-1 my-5">
-          <!-- button start -->
-          <div class="w-full h-full">
-            <!-- graph -->
-            <div
-              class="shadow-lg bg-slate-200 hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md border border-gray-200 transition ease-in-out duration-200"
-            >
-              <!-- text header -->
-              <div>
-                <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
-
-                <h5 class="font-inter text-2xl text-gray-600 text-center mt-4">
-                  Playground
-                </h5>
-              </div>
-              <!-- text header end -->
-            </div>
-          </div>
-        </div>
-        <div class="md:col-span-2 lg:col-span-1 my-5">
-          <!-- button start -->
-          <div class="w-full h-full">
-            <!-- graph -->
-            <div
-              class="shadow-lg bg-slate-200 hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md border border-gray-200 transition ease-in-out duration-200"
-            >
-              <!-- text header -->
-              <div>
-                <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
-
-                <h5 class="font-inter text-2xl text-gray-600 text-center mt-4">
-                  Playground
-                </h5>
-              </div>
-              <!-- text header end -->
-            </div>
-          </div>
-        </div>
-        <!-- 3 button end -->
-      </div>
-      <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-        <div class="md:col-span-2 lg:col-span-1 my-5">
-          <!-- button start -->
-          <div class="w-full h-full">
-            <!-- graph -->
-            <div
-              class="shadow-lg bg-slate-200 hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md border border-gray-200 transition ease-in-out duration-200"
-            >
-              <!-- text header -->
-              <div>
-                <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
-
-                <h5 class="font-inter text-2xl text-gray-600 text-center mt-4">
-                  Playground
-                </h5>
-              </div>
-              <!-- text header end -->
-            </div>
-          </div>
-        </div>
-        <div class="md:col-span-2 lg:col-span-1 my-5">
-          <!-- button start -->
-          <div class="w-full h-full">
-            <!-- graph -->
-            <div
-              class="shadow-lg bg-slate-200 hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md border border-gray-200 transition ease-in-out duration-200"
-            >
-              <!-- text header -->
-              <div>
-                <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
-
-                <h5 class="font-inter text-2xl text-gray-600 text-center mt-4">
-                  Playground
-                </h5>
-              </div>
-              <!-- text header end -->
-            </div>
-          </div>
-        </div>
-        <div class="md:col-span-2 lg:col-span-1 my-5">
-          <!-- button start -->
-          <div class="w-full h-full">
-            <!-- graph -->
-            <div
-              class="shadow-lg bg-slate-200 hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md border border-gray-200 transition ease-in-out duration-200"
-            >
-              <!-- text header -->
-              <div>
-                <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
-
-                <h5 class="font-inter text-2xl text-gray-600 text-center mt-4">
-                  Playground
-                </h5>
-              </div>
-              <!-- text header end -->
-            </div>
-          </div>
-        </div>
-        <div class="md:col-span-2 lg:col-span-1 my-5">
-          <!-- button start -->
-          <div class="w-full h-full">
-            <!-- graph -->
-            <div
-              class="shadow-lg bg-slate-200 hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md border border-gray-200 transition ease-in-out duration-200"
-            >
-              <!-- text header -->
-              <div>
-                <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
-
-                <h5 class="font-inter text-2xl text-gray-600 text-center mt-4">
-                  Playground
-                </h5>
-              </div>
-              <!-- text header end -->
-            </div>
-          </div>
-        </div>
-        <!-- 3 button end -->
-      </div>
-
-      <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-        <div class="md:col-span-2 lg:col-span-1 my-5">
-          <!-- button start -->
-          <div class="w-full h-full">
-            <!-- graph -->
-            <div
-              class="shadow-lg bg-slate-200 hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md border border-gray-200 transition ease-in-out duration-200"
-            >
-              <!-- text header -->
-              <div>
-                <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
-
-                <h5 class="font-inter text-2xl text-gray-600 text-center mt-4">
-                  Playground
-                </h5>
-              </div>
-              <!-- text header end -->
-            </div>
-          </div>
-        </div>
-        <div class="md:col-span-2 lg:col-span-1 my-5">
-          <!-- button start -->
-          <div class="w-full h-full">
-            <!-- graph -->
-            <div
-              class="shadow-lg bg-slate-200 hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md border border-gray-200 transition ease-in-out duration-200"
-            >
-              <!-- text header -->
-              <div>
-                <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
-
-                <h5 class="font-inter text-2xl text-gray-600 text-center mt-4">
-                  Playground
-                </h5>
-              </div>
-              <!-- text header end -->
-            </div>
-          </div>
-        </div>
-        <div class="md:col-span-2 lg:col-span-1 my-5">
-          <!-- button start -->
-          <div class="w-full h-full">
-            <!-- graph -->
-            <div
-              class="shadow-lg bg-slate-200 hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md border border-gray-200 transition ease-in-out duration-200"
-            >
-              <!-- text header -->
-              <div>
-                <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
-
-                <h5 class="font-inter text-2xl text-gray-600 text-center mt-4">
-                  Playground
-                </h5>
-              </div>
-              <!-- text header end -->
-            </div>
-          </div>
-        </div>
-        <div class="md:col-span-2 lg:col-span-1 my-5">
-          <!-- button start -->
-          <div class="w-full h-full">
-            <!-- graph -->
-            <div
-              class="shadow-lg bg-slate-200 hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md border border-gray-200 transition ease-in-out duration-200"
-            >
-              <!-- text header -->
-              <div>
-                <img src="aset/pegangantangan.jpg" alt="Bermain di taman" />
-
-                <h5 class="font-inter text-2xl text-gray-600 text-center mt-4">
-                  Playground
-                </h5>
-              </div>
-              <!-- text header end -->
-            </div>
-          </div>
-        </div>
-        <!-- 3 button end -->
-      </div>
-    </div>
-    <!-- Ekstrakulikuler end -->
+      <!-- Ekstrakulikuler end -->
+    </section>
 
     <svg
       id="wave"
-      style="transform: rotate(0deg); transition: 0.3s"
+      class="bg-hijautua"
+      style="transform: rotate(0deg); transition: 0.3s;"
       viewBox="0 0 1440 110"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
