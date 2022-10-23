@@ -1,78 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Dashboard</title>
-    
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500;700&display=swap"
-          rel="stylesheet"
-        />
-        <!-- Dropdown -->
-        <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
-        <link
-          rel="stylesheet"
-          href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css"
-        />
-        <!-- FONT -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Fuzzy+Bubbles:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
-    
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@200;500;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap"
-          rel="stylesheet"
-        />
-    
-    
-        <!-- AOS -->
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-          tailwind.config = {
-            theme: {
-              container: {
-                center: true,
-                padding: "16px",
-              },
-              extend: {
-                colors: {
-                  hijaumuda: "#94EC08",
-                  hijautua: "#98E51E",
-                  kuning: "#F4C447",
-                  darkblue: "#25316D",
-                  biru: "#24DCF2",
-                  ijo: "#71A72D",
-                  gelap: "#0B2027",
-                  terang: "#8CBAB4",
-                },
-                fontFamily: {
-                  caveat : ["Caveat Brush"],
-                  fuzzy : ["Fuzzy Bubbles"],
-                  peralta: ["Peralta"],
-                  inter: ["Inter"],
-                },
-                screens: {
-                  "2xl": "1320px",
-                },
-              },
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Dropdown -->
+    <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css"
+    />
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Fuzzy+Bubbles:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;500;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;500;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: "16px",
+          },
+          extend: {
+            colors: {
+              hijaumuda: "#94EC08",
+              hijautua: "#98E51E",
+              kuning: "#F4C447",
+              darkblue: "#25316D",
+              biru: "#24DCF2",
+              ijo: "#71A72D",
+              gelap: "#0B2027",
+              terang: "#8CBAB4",
             },
-          };
-        </script>
-    
-        <link href="dist/output.css" rel="stylesheet" />
-        <link rel="icon" href="aset/iconhead.png" type="image/gif" sizes="5x5" />
-      </head>
+            fontFamily: {
+              caveat: ["Caveat Brush"],
+              fuzzy: ["Fuzzy Bubbles"],
+              poppins: ["Poppins"],
+              peralta: ["Peralta"],
+              inter: ["Inter"],
+            },
+            screens: {
+              "2xl": "1320px",
+            },
+          },
+        },
+      };
+    </script>
+
+    <link href="dist/output.css" rel="stylesheet" />
+    <link rel="icon" href="aset/iconhead.png" type="image/gif" sizes="5x5" />
+  </head>
   <body>
     <!-- Header start -->
     <header
@@ -384,7 +397,7 @@
     <!-- Kontak section end -->
     <section>
       <div class="container">
-        <div class="my-10 flex flex-wrap ">
+        <div class="my-10 flex flex-wrap">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.323256271224!2d110.39290901459809!3d-7.755498794410372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59a6d4a237c7%3A0x78fe581b20f39ef7!2sPlaygroup%20and%20Daycare%20Ananda%20Mentari!5e0!3m2!1sid!2sid!4v1665598082410!5m2!1sid!2sid"
             width="700"
@@ -394,37 +407,45 @@
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
-          <div class="w-full xl:w-[45%] rounded-tr-lg rounded-br-lg  bg-slate-200">
-            <h3 class="ml-10 pt-10 font-bold font-sans text-2xl">Have A Question?</h3>
+          <div
+            class="w-full xl:w-[45%] rounded-tr-lg rounded-br-lg bg-slate-200"
+          >
+            <h3 class="ml-10 pt-10 font-bold font-sans text-2xl">
+              Have A Question?
+            </h3>
             <a
-              class="flex flex-wrap ml-10 text-[#25D366]  hover:text-slate-400 mt-5"
+              class="flex flex-wrap ml-10 text-[#25D366] hover:text-slate-400 mt-5"
               target="_blank"
               aria-label="Chat on WhatsApp"
               href="https://wa.me/+6281211717144"
             >
-              <img
-              class="w-14 " 
-              src="aset/iconWa.png" alt="">
-              <p class="font-bold font-sans text-lg my-auto ml-2">Hubungi Admin</p>
+              <img class="w-14" src="aset/iconWa.png" alt="" />
+              <p class="font-bold font-sans text-lg my-auto ml-2">
+                Hubungi Admin
+              </p>
             </a>
             <div class="w-full justify-center">
               <div class="relative mt-10">
-                <h3 class="ml-10  font-bold font-sans text-2xl">Quick Email</h3>
-            
+                <h3 class="ml-10 font-bold font-sans text-2xl">Quick Email</h3>
+
                 <form>
                   <div class="w-full ml-10 lg:w-2/3 mt-2">
-                    <div class="w-full " data-aos="fade-up">
-                      <label for="name" class="w-full flex text-based text-black font-bold"
+                    <div class="w-full" data-aos="fade-up">
+                      <label
+                        for="name"
+                        class="w-full flex text-based text-black font-bold"
                         >Nama</label
                       >
                       <input
                         type="text"
                         id="name"
-                        class="w-2/3 lg:w-full  bg-white text-dark p-3 rounded-md focus:outline-none focus:ring-ijo focus:ring-1 focus:border-ijo"
+                        class="w-2/3 lg:w-full bg-white text-dark p-3 rounded-md focus:outline-none focus:ring-ijo focus:ring-1 focus:border-ijo"
                       />
                     </div>
-                    <div class="w-full " data-aos="fade-up">
-                      <label for="email" class="w-full flex text-based text-black font-bold"
+                    <div class="w-full" data-aos="fade-up">
+                      <label
+                        for="email"
+                        class="w-full flex text-based text-black font-bold"
                         >Email</label
                       >
                       <input
@@ -433,19 +454,21 @@
                         class="w-2/3 lg:w-full bg-white text-dark p-3 rounded-md focus:outline-none focus:ring-ijo focus:ring-1 focus:border-ijo"
                       />
                     </div>
-                    <div class="w-full " data-aos="fade-up">
-                      <label for="message" class="w-full flex text-based text-bllack font-bold"
+                    <div class="w-full" data-aos="fade-up">
+                      <label
+                        for="message"
+                        class="w-full flex text-based text-bllack font-bold"
                         >Pesan</label
                       >
                       <textarea
                         type="text"
                         id="message"
-                        class="w-2/3 lg:w-full h-32  bg-white text-dark p-3 rounded-md focus:outline-none focus:ring-ijo focus:ring-1 focus:border-ijo"
+                        class="w-2/3 lg:w-full h-32 bg-white text-dark p-3 rounded-md focus:outline-none focus:ring-ijo focus:ring-1 focus:border-ijo"
                       >
                       </textarea>
                     </div>
                     <div
-                      class="w-full "
+                      class="w-full"
                       data-aos="fade-up"
                       data-aos-duration="2000"
                     >
