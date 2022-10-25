@@ -184,7 +184,7 @@
                   "
                 >
                   <ul
-                    class="overflow-y-auto py-1 h-32 text-gray-700 dark:text-gray-200"
+                    class="overflow-y-auto py-1 h-44 text-gray-700 dark:text-gray-200"
                     aria-labelledby="dropdownUsersButton"
                   >
                     <li>
@@ -214,12 +214,25 @@
                         Philosophy
                       </a>
                     </li>
+                    <li>
+                      <a
+                        href="Guru.html"
+                        class="flex items-center py-2 px-4 hover:bg-hijautua"
+                      >
+                        <img
+                          class="mr-2 w-10 h-10 rounded-full"
+                          src="aset/avatar1.svg"
+                          alt="Jese image"
+                        />
+                        Teachers
+                      </a>
+                    </li>
                   </ul>
                 </div>
 
                 <li class="group">
                   <a
-                    href="#galery"
+                    href="galery.html"
                     class="text-base text-dark py-2 px-3 mx-4 flex group-hover:text-black group-hover:bg-hijautua rounded-md transition delay-50"
                     >Galery</a
                   >
@@ -834,13 +847,14 @@
         <div class="w-full flex justify-center">
           
           <img src="aset/icon_teacher.png" class="flex mt-5 mr-2 w-16 h-16" alt="">
-          <p class="font-sans flex  text-base lg:text-3xl my-10 mr-10">
+          <p  class="font-sans flex  text-base lg:text-3xl my-10 mr-10">
             Jumlah Guru : 10
           </p>
           <img src="aset/icon_alumni.png" class="flex mt-5 mr-2 w-16 h-16" alt="">
           <p class="font-sans flex  text-base lg:text-3xl my-10 mr-10">
-            Total Alumni : 251
+            Total Alumni : <span x-data="animatedCounter(251, 50, 0)" x-init="updatecounter" x-text="Math.round(current)"></span>
           </p>
+          
         </div>
         
       </div>
@@ -1386,6 +1400,28 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+  <script>
+    function animatedCounter(targer, time = 200, start = 0) {
+      return {
+        current: 0,
+        target: targer,
+        time: time,
+        start: start,
+        updatecounter: function() {
+          start = this.start;
+          const increment = (this.target - start) / this.time;
+          const handle = setInterval(() => {
+            if (this.current < this.target)
+              this.current += increment
+            else {
+              clearInterval(handle);
+              this.current = this.target
+            }
+          }, 1);
+        }
+      };
+    }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 </html>
