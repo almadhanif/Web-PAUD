@@ -5,6 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <!-- Meta for SEO -->
+    <title>Ananda Mentari</title>
+    <meta
+      name="description"
+      content="PAUD Ananda Mentari adalah sekolah atau instansi pendidikan anak usia dini yang memiliki berbagai fasilitas lengkap dan terbaik di Yogyakarta serta menggunakan bahasa inggris."
+    />
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Ananda Mentari" />
+    <meta
+      itemprop="description"
+      content="PAUD Ananda Mentari adalah sekolah atau instansi pendidikan anak usia dini yang memiliki berbagai fasilitas lengkap dan terbaik di Yogyakarta serta menggunakan bahasa inggris."
+    />
+    <meta
+      itemprop="image"
+      content="https://3.bp.blogspot.com/-1ai0XOzDuuA/W6oUYLhTsYI/AAAAAAAC1tU/inT5dgVLMbc1-j5W77VIyWmuCHBsW7_9wCLcBGAs/s1600/Playgroup%2BAnanda%2BMentari.jpg"
+    />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="http://anandamentari.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ananda Mentari" />
+    <meta
+      property="og:description"
+      content="PAUD Ananda Mentari adalah sekolah atau instansi pendidikan anak usia dini yang memiliki berbagai fasilitas lengkap dan terbaik di Yogyakarta serta menggunakan bahasa inggris."
+    />
+    <meta
+      property="og:image"
+      content="https://3.bp.blogspot.com/-1ai0XOzDuuA/W6oUYLhTsYI/AAAAAAAC1tU/inT5dgVLMbc1-j5W77VIyWmuCHBsW7_9wCLcBGAs/s1600/Playgroup%2BAnanda%2BMentari.jpg"
+    />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ananda Mentari" />
+    <meta
+      name="twitter:description"
+      content="PAUD Ananda Mentari adalah sekolah atau instansi pendidikan anak usia dini yang memiliki berbagai fasilitas lengkap dan terbaik di Yogyakarta serta menggunakan bahasa inggris."
+    />
+    <meta
+      name="twitter:image"
+      content="https://3.bp.blogspot.com/-1ai0XOzDuuA/W6oUYLhTsYI/AAAAAAAC1tU/inT5dgVLMbc1-j5W77VIyWmuCHBsW7_9wCLcBGAs/s1600/Playgroup%2BAnanda%2BMentari.jpg"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -99,169 +145,203 @@
     <link rel="icon" href="aset/iconhead.png" type="image/gif" sizes="5x5" />
   </head>
   <body>
-     <!-- Header start -->
-     <header
-     class="sticky top-0 z-50 bg-transparent left-0 flex items-center w-full bg-gradient-to-tr bg-white rounded-b-md bg-clip-padding"
-   >
-     <div class="container">
-       <div class="flex items-center justify-between relative">
-         <div class="px-3 xl:ml-32">
-           <a href="#home"
-             ><img src="./aset/mainlogo.png" class="w-64 block py-0"
-           /></a>
-         </div>
-         <div class="flex items-center mr-20 px-3">
-           <button
-             id="hamburger"
-             name="hamburger"
-             type="button"
-             class="block absolute right-4 py-2 lg:hidden"
-           >
-             <span
-               class="hamburger-line transition duration-300 ease-in-out origin-top-left"
-             ></span>
-             <span
-               class="hamburger-line transition duration-300 ease-in-out"
-             ></span>
-             <span
-               class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
-             ></span>
-           </button>
-           <div
-             id="transfer"
-             class="w-full mx-auto self-center lg:w-1/3"
-           ></div>
-           <button
-             id="exit"
-             type="button"
-             class="hover:text-red-400 mb-10 float-right"
-           ></button>
+    <!-- Header start -->
+    <header
+      class="sticky top-0 z-50 bg-transparent left-0 flex items-center w-full bg-gradient-to-tr bg-white rounded-b-md bg-clip-padding"
+    >
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-3 xl:ml-32">
+            <a href="index.html" aria-label="Kembali ke awal home">
+              <picture>
+                <source type="image/webp" srcset="aset/mainlogo_1.webp" />
+                <img
+                  class="w-64 h-32 bg-cover"
+                  src="/aset/mainlogo_1.webp"
+                  alt="Ananda Mentari Logo"
+                />
+              </picture>
+            </a>
+          </div>
+          <div class="flex items-center mr-20 px-3">
+            <button
+              aria-label="Dropdown Menu"
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-4 py-2 lg:hidden"
+            >
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+            <div
+              id="transfer"
+              class="w-full mx-auto self-center lg:w-1/3"
+            ></div>
+            <button
+              aria-label="Close"
+              id="exit"
+              type="button"
+              class="hover:text-red-400 mb-10 float-right"
+            ></button>
 
-           <nav
-             id="nav-menu"
-             class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
-           >
-             <ul class="block lg:flex">
-               <li class="group">
-                 <a
-                   href="index.html"
-                   class="text-base text-black py-2 px-3 mx-4 flex group-hover:text-black group-hover:bg-hijautua rounded-md transition delay-50"
-                   >Home</a
-                 >
-               </li>
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="index.html"
+                    class="text-base  text-black py-2 px-3 mx-4 flex group-hover:text-black group-hover:bg-hijautua rounded-md transition delay-50"
+                    >Home</a
+                  >
+                </li>
 
-               <button
-                 id="dropdownUsersButton"
-                 data-dropdown-toggle="dropdownUsers"
-                 data-dropdown-placement="bottom"
-                 class="text-base  text-dark hover:bg-hijautua focus:ring-4 focus:outline-none focus:ring-biru rounded-lg py-2 px-3 mx-4 text-center inline-flex items-center"
-                 type="button"
-               >
-                 About
-                 <svg
-                   class="ml-2 w-4 h-4"
-                   aria-hidden="true"
-                   fill="none"
-                   stroke="currentColor"
-                   viewBox="0 0 24 24"
-                   xmlns="http://www.w3.org/2000/svg"
-                 >
-                   <path
-                     stroke-linecap="round"
-                     stroke-linejoin="round"
-                     stroke-width="2"
-                     d="M19 9l-7 7-7-7"
-                   ></path>
-                 </svg>
-               </button>
-               <!-- Dropdown menu -->
-               <div
-                 id="dropdownUsers"
-                 class="hidden z-5 w-60 bg-white rounded shadow"
-                 data-popper-reference-hidden=""
-                 data-popper-escaped=""
-                 data-popper-placement="bottom"
-                 style="
-                   position: absolute;
-                   inset: 0px auto auto 0px;
-                   transform: translate3d(0px, 410.4px, 0px);
-                 "
-               >
-                 <ul
-                   class="overflow-y-auto py-1 h-44 text-gray-700 dark:text-gray-200"
-                   aria-labelledby="dropdownUsersButton"
-                 >
-                   <li>
-                     <a
-                       href="Founder.html"
-                       class="flex items-center py-2 px-4 hover:bg-hijautua"
-                     >
-                       <img
-                         class="mr-2 w-10 h-10 rounded-full"
-                         src="aset/avatar1.svg"
-                         alt="Jese image"
-                       />
-                       Founder
-                     </a>
-                   </li>
+                <button
+                  id="dropdownUsersButton"
+                  aria-label="dropdownbtn"
+                  data-dropdown-toggle="dropdownUsers"
+                  data-dropdown-placement="bottom"
+                  class="text-base text-dark hover:bg-hijautua focus:ring-4 focus:outline-none focus:ring-biru rounded-lg py-2 px-3 mx-4 text-center inline-flex items-center"
+                  type="button"
+                >
+                  About
+                  <svg
+                    class="ml-2 w-4 h-4"
+                    aria-hidden="true"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <ul
+                  id="dropdownUsers"
+                  class="hidden z-5 w-60 bg-white rounded shadow"
+                  data-popper-reference-hidden=""
+                  data-popper-escaped=""
+                  data-popper-placement="bottom"
+                  style="
+                    position: absolute;
+                    inset: 0px auto auto 0px;
+                    transform: translate3d(0px, 410.4px, 0px);
+                  "
+                >
+                  <ul
+                    class="overflow-y-auto py-1 h-44 text-gray-700 dark:text-gray-200"
+                    aria-labelledby="dropdownUsersButton"
+                  >
+                    <li>
+                      <a
+                        aria-label="Link menuju halaman founder"
+                        href="Founder.html"
+                        class="flex items-center py-2 px-4 hover:bg-hijautua"
+                      >
+                        <picture>
+                          <source type="image/webp" srcset="aset/webp foto/Founder.webp" />
+                          <img
+                            class="mr-2 w-10 h-10 rounded-full"
+                            src="aset/webp foto/Founder.webp"
+                            alt="Logo Founder"
+                            loading="lazy"
+                          />
+                        </picture>
 
-                   <li>
-                     <a
-                       href="Filosofi.html"
-                       class="flex items-center py-2 px-4 hover:bg-hijautua"
-                     >
-                       <img
-                         class="mr-2 w-10 h-10 rounded-full"
-                         src="aset/avatar1.svg"
-                         alt="Jese image"
-                       />
-                       Philosophy
-                     </a>
-                   </li>
-                   <li>
-                     <a
-                       href="Guru.html"
-                       class="flex items-center py-2 px-4 hover:bg-hijautua"
-                     >
-                       <img
-                         class="mr-2 w-10 h-10 rounded-full"
-                         src="aset/avatar1.svg"
-                         alt="Jese image"
-                       />
-                       Teachers
-                     </a>
-                   </li>
-                 </ul>
-               </div>
+                        Founder
+                      </a>
+                    </li>
 
-               <li class="group">
-                 <a
-                   href="galery.html"
-                   class="text-base text-dark py-2 px-3 mx-4 flex group-hover:text-black group-hover:bg-hijautua rounded-md transition delay-50"
-                   >Galery</a
-                 >
-               </li>
-               <li class="group">
-                 <a
-                   href="event.html"
-                   class="text-base text-dark py-2 px-3 mx-4 flex group-hover:text-black group-hover:bg-hijautua rounded-md transition delay-50"
-                   >Events</a
-                 >
-               </li>
-               <li class="group">
-                 <a
-                   href="contact.html"
-                   class="text-base bg-hijaumuda text-dark py-2 px-3 mx-4 flex group-hover:text-black group-hover:bg-hijautua rounded-md transition delay-50"
-                   >Contact</a
-                 >
-               </li>
-             </ul>
-           </nav>
-         </div>
-       </div>
-     </div>
-   </header>
-   <!-- Header end -->
+                    <li>
+                      <a
+                        aria-label="Link menuju halaman filosofi"
+                        href="Filosofi.html"
+                        class="flex items-center py-2 px-4 hover:bg-hijautua"
+                      >
+                        <picture>
+                          <source type="image/webp" srcset="aset/webp foto/filosofi.webp" />
+                          <img
+                            class="mr-2 w-10 h-10 rounded-full"
+                            src="aset/webp foto/filosofi.webp"
+                            alt="Logo Philosophy"
+                            loading="lazy"
+                          />
+                        </picture>
+
+                        Philosophy
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        aria-label="Link menuju halaman guru"
+                        href="Guru.html"
+                        class="flex items-center py-2 px-4 hover:bg-hijautua"
+                      >
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="aset/webp foto/icon-guru.webp"
+                          />
+                          <img
+                            src="aset/webp foto/icon-guru.webp"
+                            loading="lazy"
+                            alt="Logo Teacher"
+                            class="mr-2 w-10 h-10 rounded-full"
+                          />
+                        </picture>
+                        Teachers
+                      </a>
+                    </li>
+                  </ul>
+                </ul>
+
+                <li class="group">
+                  <a
+                  aria-label="Link menuju halaman galeri"
+                    aria-label="Menuju galeri"
+                    href="galery.html"
+                    class="text-base text-dark py-2 px-3 mx-4 flex group-hover:text-black group-hover:bg-hijautua rounded-md transition delay-50"
+                    >Galery</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    aria-label="Menuju events"
+                    href="event.html"
+                    class="text-base text-dark py-2 px-3 mx-4 flex group-hover:text-black group-hover:bg-hijautua rounded-md transition delay-50"
+                    >Events</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    aria-label="Menuju kontak"
+                    href="contact.html"
+                    class="text-base bg-hijaumuda text-dark py-2 px-3 mx-4 flex group-hover:text-black group-hover:bg-hijautua rounded-md transition delay-50"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header end -->
 
     <!-- Kontak section start -->
     <section
@@ -271,16 +351,27 @@
       <div class="container">
         <div class="flex flex-wrap" data-aos="fade-up" data-aos-duration="700">
           <div class="w-full self-center px-4 lg:w-[45%]">
-            <img src="aset/imagecontact.png" alt="animasi home" />
+            <picture>
+              <source
+                type="image/webp"
+                srcset="aset/webp foto/imagecontact.webp"
+              />
+              <img
+                alt="Animasi Anak Bermain"
+                class="block object-cover object-center w-full h-full rounded-lg"
+                src="aset/webp foto/imagecontact.webp"
+              />
+            </picture>
+            
           </div>
           <div class="w-full self-end lg:w-[55%]">
             <div class="relative mt-10">
               <div class="max-w-xl mx-auto text-center" data-aos="fade-up">
-                <h2
+                <h1
                   class="font-bold font-sans text-white text-3xl mb-4 sm:text-4xl lg:text-5xl"
                 >
                   Contact Us
-                </h2>
+                </h1>
               </div>
 
               <div class="w-full lg:mx-auto">
@@ -302,7 +393,7 @@
                             </h2>
                             <a
                               class="flex flex-wrap justify-center text-xl hover:text-slate-500 mt-5"
-                              aria-label="Call"
+                              aria-label="Mail"
                               href="mailto:@Paud.AnandaMentari.id"
                             >
                               <svg
@@ -318,9 +409,9 @@
                                   d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
                                 />
                               </svg>
-                              <p class="my-auto text-xl lg:text-base">
+                              <h3 class="my-auto text-xl lg:text-base">
                                 Paud.AnandaMentari.id
-                              </p>
+                              </h3>
                             </a>
                           </div>
                           <!-- text header end -->
@@ -339,7 +430,7 @@
                             <h2
                               class="font-inter text-2xl text-black text-center mt-4"
                             >
-                              Email
+                              Call
                             </h2>
                             <a
                               class="flex flex-wrap justify-center text-xl hover:text-slate-500 mt-5"
@@ -359,9 +450,9 @@
                                 />
                               </svg>
 
-                              <p class="my-auto text-xl lg:text-base">
+                              <h3 class="my-auto text-xl lg:text-base">
                                 (0274) 43 329 51
-                              </p>
+                              </h3>
                             </a>
                           </div>
                           <!-- text header end -->
@@ -373,7 +464,7 @@
                       <div class="w-full h-full lg:ml-40">
                         <!-- graph -->
                         <div
-                          class="h-60 shadow-lg bg-kuning hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md transition ease-in-out duration-200"
+                          class="h-60 lg:h-80 xl:h-60 shadow-lg bg-kuning hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md transition ease-in-out duration-200"
                         >
                           <!-- text header -->
                           <div>
@@ -385,7 +476,7 @@
                             <a
                               class="flex flex-wrap text-xl justify-center hover:text-slate-500 mt-5"
                               aria-label="Maps"
-                              href="http://maps.google.com/?q=Playgroup and Daycare Ananda Mentari"
+                              href="http://maps.google.com/?q=Playgroup%20and%20Daycare%20Ananda%20Mentari"
                             >
                               <svg
                                 class="w-14 lg:w-1/4 mr-2"
@@ -398,11 +489,11 @@
                                   d="M19.527 4.799c1.212 2.608.937 5.678-.405 8.173-1.101 2.047-2.744 3.74-4.098 5.614-.619.858-1.244 1.75-1.669 2.727-.141.325-.263.658-.383.992-.121.333-.224.673-.34 1.008-.109.314-.236.684-.627.687h-.007c-.466-.001-.579-.53-.695-.887-.284-.874-.581-1.713-1.019-2.525-.51-.944-1.145-1.817-1.79-2.671L19.527 4.799zM8.545 7.705l-3.959 4.707c.724 1.54 1.821 2.863 2.871 4.18.247.31.494.622.737.936l4.984-5.925-.029.01c-1.741.601-3.691-.291-4.392-1.987a3.377 3.377 0 0 1-.209-.716c-.063-.437-.077-.761-.004-1.198l.001-.007zM5.492 3.149l-.003.004c-1.947 2.466-2.281 5.88-1.117 8.77l4.785-5.689-.058-.05-3.607-3.035zM14.661.436l-3.838 4.563a.295.295 0 0 1 .027-.01c1.6-.551 3.403.15 4.22 1.626.176.319.323.683.377 1.045.068.446.085.773.012 1.22l-.003.016 3.836-4.561A8.382 8.382 0 0 0 14.67.439l-.009-.003zM9.466 5.868L14.162.285l-.047-.012A8.31 8.31 0 0 0 11.986 0a8.439 8.439 0 0 0-6.169 2.766l-.016.018 3.665 3.084z"
                                 />
                               </svg>
-                              <p class="w-[72%] text-base">
+                              <h3 class="w-[72%] text-base">
                                 Jl. Wira Jaya No.313, Gejayan, Condongcatur,
                                 Kec. Depok, Kabupaten Sleman, Daerah Istimewa
                                 Yogyakarta 55283
-                              </p>
+                              </h3>
                             </a>
                           </div>
                           <!-- text header end -->
@@ -422,47 +513,55 @@
     <!-- Kontak section end -->
     <section>
       <div class="container">
-        <div class="my-10 flex flex-wrap ">
+        <div class="my-10 flex flex-wrap">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.323256271224!2d110.39290901459809!3d-7.755498794410372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59a6d4a237c7%3A0x78fe581b20f39ef7!2sPlaygroup%20and%20Daycare%20Ananda%20Mentari!5e0!3m2!1sid!2sid!4v1665598082410!5m2!1sid!2sid"
-            width="700"
-            height="600"
+            
+            class="w-full h-96 xl:w-[55%] xl:h-screen"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
-          <div class="w-full xl:w-[45%] rounded-tr-lg rounded-br-lg  bg-slate-200">
-            <h3 class="ml-10 pt-10 font-bold font-sans text-2xl">Have A Question?</h3>
+          <div
+            class="w-full xl:w-[45%] rounded-tr-lg rounded-br-lg bg-slate-200"
+          >
+            <h2 class="ml-10 pt-10 font-bold font-sans text-2xl">
+              Have A Question?
+            </h2>
             <a
-              class="flex flex-wrap ml-10 text-[#25D366]  hover:text-slate-400 mt-5"
+              class="flex flex-wrap ml-10 text-[#25D366] hover:text-slate-400 mt-5"
               target="_blank"
               aria-label="Chat on WhatsApp"
               href="https://wa.me/+6281211717144"
             >
-              <img
-              class="w-14 " 
-              src="aset/iconWa.png" alt="">
-              <p class="font-bold font-sans text-lg my-auto ml-2">Hubungi Admin</p>
+              <img class="w-14" src="aset/iconWa.png" alt="" />
+              <h3 class="font-bold font-sans text-lg my-auto ml-2">
+                Hubungi Admin
+              </h3>
             </a>
             <div class="w-full justify-center">
               <div class="relative mt-10">
-                <h3 class="ml-10  font-bold font-sans text-2xl">Quick Email</h3>
-            
+                <h2 class="ml-10 font-bold font-sans text-2xl">Quick Email</h2>
+
                 <form>
                   <div class="w-full ml-10 lg:w-2/3 mt-2">
-                    <div class="w-full " data-aos="fade-up">
-                      <label for="name" class="w-full flex text-based text-black font-bold"
+                    <div class="w-full" data-aos="fade-up">
+                      <label
+                        for="name"
+                        class="w-full flex text-based text-black font-bold"
                         >Nama</label
                       >
                       <input
                         type="text"
                         id="name"
-                        class="w-2/3 lg:w-full  bg-white text-dark p-3 rounded-md focus:outline-none focus:ring-ijo focus:ring-1 focus:border-ijo"
+                        class="w-2/3 lg:w-full bg-white text-dark p-3 rounded-md focus:outline-none focus:ring-ijo focus:ring-1 focus:border-ijo"
                       />
                     </div>
-                    <div class="w-full " data-aos="fade-up">
-                      <label for="email" class="w-full flex text-based text-black font-bold"
+                    <div class="w-full" data-aos="fade-up">
+                      <label
+                        for="email"
+                        class="w-full flex text-based text-black font-bold"
                         >Email</label
                       >
                       <input
@@ -471,23 +570,27 @@
                         class="w-2/3 lg:w-full bg-white text-dark p-3 rounded-md focus:outline-none focus:ring-ijo focus:ring-1 focus:border-ijo"
                       />
                     </div>
-                    <div class="w-full " data-aos="fade-up">
-                      <label for="message" class="w-full flex text-based text-bllack font-bold"
+                    <div class="w-full" data-aos="fade-up">
+                      <label
+                        for="message"
+                        class="w-full flex text-based text-bllack font-bold"
                         >Pesan</label
                       >
                       <textarea
                         type="text"
                         id="message"
-                        class="w-2/3 lg:w-full h-32  bg-white text-dark p-3 rounded-md focus:outline-none focus:ring-ijo focus:ring-1 focus:border-ijo"
+                        class="w-2/3 lg:w-full h-32 bg-white text-dark p-3 rounded-md focus:outline-none focus:ring-ijo focus:ring-1 focus:border-ijo"
                       >
                       </textarea>
                     </div>
                     <div
-                      class="w-full "
+                      class="w-full"
                       data-aos="fade-up"
                       data-aos-duration="2000"
                     >
                       <button
+                      aria-label="Send email to ananda mentari"
+                      id="btnSendEmail"
                         class="w-2/3 lg:w-full text-base font-semibold text-white bg-kuning py-3 px-8 mb-5 rounded-lg hover:opacity-80 hover:shadow-lg transition duration-500"
                       >
                         Send
@@ -529,13 +632,13 @@
       <div class="container">
         <div class="flex flex-wrap" data-aos="fade-up" data-aos-duration="2000">
           <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
-            <h3 class="font-bold text-2xl mb-2 text-slate-200">
+            <h3 class="font-bold text-2xl mb-2 text-white">
               Any Question?
             </h3>
             <a
-              class="flex flex-wrap hover:text-slate-500 mt-5"
+              class="flex flex-wrap text-slate-50 hover:text-slate-300 mt-5"
               aria-label="Maps"
-              href="http://maps.google.com/?q=Playgroup and Daycare Ananda Mentari"
+              href="http://maps.google.com/?q=Playgroup%20and%20Daycare%20Ananda%20Mentari"
             >
               <svg
                 class="w-6 mr-2"
@@ -550,16 +653,16 @@
               </svg>
               Selokan Mataram Jl. Seturan 15, Catur Tunggal
               <a
-                class="hover:text-slate-500"
+                class="text-slate-50 hover:text-slate-300"
                 aria-label="Maps"
-                href="http://maps.google.com/?q=Playgroup and Daycare Ananda Mentari"
+                href="http://maps.google.com/?q=Playgroup%20and%20Daycare%20Ananda%20Mentari"
               >
                 Depok, Sleman, D.I. Yogyakarta, Indonesia, 55281
               </a>
             </a>
 
             <a
-              class="flex flex-wrap hover:text-slate-500 mt-5"
+              class="flex flex-wrap text-slate-50 hover:text-slate-300 mt-5"
               aria-label="Chat on WhatsApp"
               href="https://wa.me/+6281211717144"
             >
@@ -577,11 +680,12 @@
               Chat on WhatsApp
             </a>
             <a
-              class="flex flex-wrap hover:text-slate-500 mt-5"
+              class="flex flex-wrap text-slate-50 hover:text-slate-300 mt-5"
               aria-label="Call"
               href="tel:(0274) 43 329 51"
             >
               <svg
+                id="svg_iconcall"
                 class="w-6 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -598,11 +702,12 @@
               (0274) 43 329 51
             </a>
             <a
-              class="flex flex-wrap hover:text-slate-500 mt-5"
-              aria-label="Call"
+              class="flex flex-wrap text-slate-50 hover:text-slate-300 mt-5"
+              aria-label="Email"
               href="mailto:@Paud.AnandaMentari.id"
             >
               <svg
+                id="svg_iconmail"
                 class="w-6 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -621,51 +726,57 @@
             </a>
           </div>
           <div class="w-full text-slate-200 px-4 mb-12 md:w-1/3">
-            <h3 class="font-semibold text-xl mb-5">Links</h3>
+            <h3 class="font-semibold text-white text-xl mb-5">Links</h3>
             <ul class="text-slate-300">
               <li>
                 <a
-                  href="#home"
-                  class="inline-block text-base hover:text-ijoterang mb-3"
+                  aria-label="nav home"
+                  href="index.html"
+                  class="inline-block text-base text-slate-50 hover:text-slate-300 mb-3"
                   >Home</a
                 >
               </li>
               <li>
                 <a
-                  href="#fitur"
-                  class="inline-block text-base hover:text-ijoterang mb-3"
+                aria-label="nav About"
+                  href="Founder.html"
+                  class="inline-block text-base text-slate-50 hover:text-slate-300 mb-3"
                   >About</a
                 >
               </li>
               <li>
                 <a
-                  href="#about"
-                  class="inline-block text-base hover:text-ijoterang mb-3"
-                  >Facility</a
-                >
+                aria-label="nav Galeri"
+                  href="galery.html"
+                  class="inline-block text-base text-slate-50 hover:text-slate-300 mb-3"
+                  >Galery
+                </a>
               </li>
               <li>
                 <a
-                  href="#kontak"
-                  class="inline-block text-base hover:text-ijoterang mb-3"
+                aria-label="nav Galeri"
+                  href="event.html"
+                  class="inline-block text-base text-slate-50 hover:text-slate-300 mb-3"
                   >Events</a
                 >
               </li>
               <li>
                 <a
-                  href="#kontak"
-                  class="inline-block text-base hover:text-ijoterang mb-3"
+                aria-label="nav Galeri"
+                  href="contact.html"
+                  class="inline-block text-base text-slate-50 hover:text-slate-300 mb-3"
                   >Contact Us</a
                 >
               </li>
             </ul>
           </div>
           <div class="w-full px-4 mb-12 md:w-1/3">
-            <h3 class="font-semibold text-slate-200 text-xl mb-5">
+            <h3 class="font-semibold text-slate-50  text-xl mb-5">
               Connect With Us
             </h3>
             <div class="flex items-center">
               <a
+              aria-label="nav youtube"
                 href="https://www.youtube.com/channel/UCwmrQS1oCZfREPg3rwTH7Tg/featured"
                 target="_blank"
                 class="w-9 h-9 mr-3 rounded-full flex justify-center items-center bg-white border border-slate-300 hover:border-ijoterang hover:bg-ijo hover:text-white"
@@ -684,7 +795,8 @@
                 </svg>
               </a>
               <a
-                href="https://www.instagram.com/almadhanif/"
+              aria-label="nav Instagram"
+                href="https://www.instagram.com/ananda_mentari/?hl=id"
                 target="_blank"
                 class="w-9 h-9 mr-3 rounded-full flex justify-center items-center bg-white border border-slate-300 hover:border-ijoterang hover:bg-ijo hover:text-white"
               >
@@ -702,6 +814,7 @@
                 </svg>
               </a>
               <a
+              aria-label="nav LinkedIn"
                 href="https://www.linkedin.com/in/firman-almadhani-kurniawan/"
                 target="_blank"
                 class="w-9 h-9 mr-3 rounded-full flex justify-center items-center bg-white border border-slate-300 hover:border-ijoterang hover:bg-ijo hover:text-white"
@@ -720,6 +833,8 @@
                 </svg>
               </a>
               <a
+              
+              aria-label="nav Github"
                 href="https://github.com/almadhanif"
                 target="_blank"
                 class="w-9 h-9 mr-3 rounded-full flex justify-center items-center bg-white border border-slate-300 hover:border-ijoterang hover:bg-ijo hover:text-white"

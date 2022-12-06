@@ -47,30 +47,7 @@ document.getElementById("submit").onclick = function () {
     page.href = "#index.html";
 };
 
-// Modal Popup-btn
-window.addEventListener('DOMContentLoaded',() =>{
-    const passwd = document.querySelector('#overlay-passwd')
-    const sukses = document.querySelector('#overlay-sukses')
-    const payBtn = document.querySelector('#pay-btn')
-    const confirmBtn = document.querySelector('#confirm-btn')
-    const closeBtn = document.querySelector('#close-modal')
 
-    const toggleModal = () => {
-        passwd.classList.toggle('hidden');
-        passwd.classList.toggle('flex');
-    }
-    payBtn.addEventListener('click', toggleModal)
-    closeBtn.addEventListener('click', toggleModal)
-    confirmBtn.addEventListener('click',() => {
-        passwd.classList.add('hidden')
-        passwd.classList.remove('flex')
-        sukses.classList.add('flex')
-        sukses.classList.remove('hidden')
-    })
-    confirmBtn.addEventListener('click',() => {
-        
-    })
-})
 
 // Carousel
 currentSlideID = 1;

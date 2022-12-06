@@ -5,31 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Philosophy</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500;700&display=swap"
-      rel="stylesheet"
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <!-- Meta for SEO -->
+    <title>Ananda Mentari</title>
+    <meta
+      name="description"
+      content="PAUD Ananda Mentari adalah sekolah atau instansi pendidikan anak usia dini yang memiliki berbagai fasilitas lengkap dan terbaik di Yogyakarta serta menggunakan bahasa inggris."
     />
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Ananda Mentari" />
+    <meta
+      itemprop="description"
+      content="PAUD Ananda Mentari adalah sekolah atau instansi pendidikan anak usia dini yang memiliki berbagai fasilitas lengkap dan terbaik di Yogyakarta serta menggunakan bahasa inggris."
+    />
+    <meta
+      itemprop="image"
+      content="https://3.bp.blogspot.com/-1ai0XOzDuuA/W6oUYLhTsYI/AAAAAAAC1tU/inT5dgVLMbc1-j5W77VIyWmuCHBsW7_9wCLcBGAs/s1600/Playgroup%2BAnanda%2BMentari.jpg"
+    />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="http://anandamentari.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ananda Mentari" />
+    <meta
+      property="og:description"
+      content="PAUD Ananda Mentari adalah sekolah atau instansi pendidikan anak usia dini yang memiliki berbagai fasilitas lengkap dan terbaik di Yogyakarta serta menggunakan bahasa inggris."
+    />
+    <meta
+      property="og:image"
+      content="https://3.bp.blogspot.com/-1ai0XOzDuuA/W6oUYLhTsYI/AAAAAAAC1tU/inT5dgVLMbc1-j5W77VIyWmuCHBsW7_9wCLcBGAs/s1600/Playgroup%2BAnanda%2BMentari.jpg"
+    />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ananda Mentari" />
+    <meta
+      name="twitter:description"
+      content="PAUD Ananda Mentari adalah sekolah atau instansi pendidikan anak usia dini yang memiliki berbagai fasilitas lengkap dan terbaik di Yogyakarta serta menggunakan bahasa inggris."
+    />
+    <meta
+      name="twitter:image"
+      content="https://3.bp.blogspot.com/-1ai0XOzDuuA/W6oUYLhTsYI/AAAAAAAC1tU/inT5dgVLMbc1-j5W77VIyWmuCHBsW7_9wCLcBGAs/s1600/Playgroup%2BAnanda%2BMentari.jpg"
+    />
+
+
     <!-- Dropdown -->
     <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
-
-    <!-- Slick.css -->
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.6.1.min.js"
-      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-      crossorigin="anonymous"
-    ></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500;700&family=Peralta&display=swap"
-      rel="stylesheet"
-    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -96,7 +121,12 @@
     </script>
 
     <link href="dist/output.css" rel="stylesheet" />
-    <link rel="icon" href="aset/iconhead.png" type="image/gif" sizes="5x5" />
+    <link
+      rel="icon"
+      href="aset/mainlogo_1.webp"
+      type="image/webp"
+      sizes="5x5"
+    />
   </head>
   <body>
     <!-- Header start -->
@@ -106,12 +136,20 @@
       <div class="container">
         <div class="flex items-center justify-between relative">
           <div class="px-3 xl:ml-32">
-            <a href="#home"
-              ><img src="./aset/mainlogo.png" class="w-64 block py-0"
-            /></a>
+            <a href="index.html" aria-label="Kembali ke awal home">
+              <picture>
+                <source type="image/webp" srcset="aset/mainlogo_1.webp" />
+                <img
+                  class="w-64 h-32 bg-cover"
+                  src="/aset/mainlogo_1.webp"
+                  alt="Ananda Mentari Logo"
+                />
+              </picture>
+            </a>
           </div>
           <div class="flex items-center mr-20 px-3">
             <button
+              aria-label="Dropdown Menu"
               id="hamburger"
               name="hamburger"
               type="button"
@@ -132,6 +170,7 @@
               class="w-full mx-auto self-center lg:w-1/3"
             ></div>
             <button
+              aria-label="Close"
               id="exit"
               type="button"
               class="hover:text-red-400 mb-10 float-right"
@@ -145,13 +184,14 @@
                 <li class="group">
                   <a
                     href="index.html"
-                    class="text-base text-black py-2 px-3 mx-4 flex group-hover:text-black group-hover:bg-hijautua rounded-md transition delay-50"
+                    class="text-base  text-black py-2 px-3 mx-4 flex group-hover:text-black group-hover:bg-hijautua rounded-md transition delay-50"
                     >Home</a
                   >
                 </li>
 
                 <button
                   id="dropdownUsersButton"
+                  aria-label="dropdownbtn"
                   data-dropdown-toggle="dropdownUsers"
                   data-dropdown-placement="bottom"
                   class="text-base bg-hijaumuda text-dark hover:bg-hijautua focus:ring-4 focus:outline-none focus:ring-biru rounded-lg py-2 px-3 mx-4 text-center inline-flex items-center"
@@ -175,7 +215,7 @@
                   </svg>
                 </button>
                 <!-- Dropdown menu -->
-                <div
+                <ul
                   id="dropdownUsers"
                   class="hidden z-5 w-60 bg-white rounded shadow"
                   data-popper-reference-hidden=""
@@ -193,49 +233,71 @@
                   >
                     <li>
                       <a
+                        aria-label="Link menuju halaman founder"
                         href="Founder.html"
                         class="flex items-center py-2 px-4 hover:bg-hijautua"
                       >
-                        <img
-                          class="mr-2 w-10 h-10 rounded-full"
-                          src="aset/avatar1.svg"
-                          alt="Jese image"
-                        />
+                        <picture>
+                          <source type="image/webp" srcset="aset/webp foto/Founder.webp" />
+                          <img
+                            class="mr-2 w-10 h-10 rounded-full"
+                            src="aset/webp foto/Founder.webp"
+                            alt="Logo Founder"
+                            loading="lazy"
+                          />
+                        </picture>
+
                         Founder
                       </a>
                     </li>
 
                     <li>
                       <a
+                        aria-label="Link menuju halaman filosofi"
                         href="Filosofi.html"
-                        class="flex items-center py-2 px-4 hover:bg-hijautua"
+                        class="flex  items-center py-2 px-4 hover:bg-hijautua"
                       >
-                        <img
-                          class="mr-2 w-10 h-10 rounded-full"
-                          src="aset/avatar1.svg"
-                          alt="Jese image"
-                        />
+                        <picture>
+                          <source type="image/webp" srcset="aset/webp foto/filosofi.webp" />
+                          <img
+                            class="mr-2 w-10 h-10 rounded-full"
+                            src="aset/webp foto/filosofi.webp"
+                            alt="Logo Philosophy"
+                            loading="lazy"
+                          />
+                        </picture>
+
                         Philosophy
                       </a>
                     </li>
                     <li>
                       <a
+                        aria-label="Link menuju halaman guru"
                         href="Guru.html"
                         class="flex items-center py-2 px-4 hover:bg-hijautua"
                       >
-                        <img
-                          class="mr-2 w-10 h-10 rounded-full"
-                          src="aset/avatar1.svg"
-                          alt="Jese image"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="aset/webp foto/icon-guru.webp"
+                          />
+                          <img
+                            src="aset/webp foto/icon-guru.webp"
+                            loading="lazy"
+                            alt="Logo Teacher"
+                            class="mr-2 w-10 h-10 rounded-full"
+                          />
+                        </picture>
                         Teachers
                       </a>
                     </li>
                   </ul>
-                </div>
+                </ul>
 
                 <li class="group">
                   <a
+                  aria-label="Link menuju halaman galeri"
+                    aria-label="Menuju galeri"
                     href="galery.html"
                     class="text-base text-dark py-2 px-3 mx-4 flex group-hover:text-black group-hover:bg-hijautua rounded-md transition delay-50"
                     >Galery</a
@@ -243,6 +305,7 @@
                 </li>
                 <li class="group">
                   <a
+                    aria-label="Menuju events"
                     href="event.html"
                     class="text-base text-dark py-2 px-3 mx-4 flex group-hover:text-black group-hover:bg-hijautua rounded-md transition delay-50"
                     >Events</a
@@ -250,6 +313,7 @@
                 </li>
                 <li class="group">
                   <a
+                    aria-label="Menuju kontak"
                     href="contact.html"
                     class="text-base text-dark py-2 px-3 mx-4 flex group-hover:text-black group-hover:bg-hijautua rounded-md transition delay-50"
                     >Contact</a
@@ -278,15 +342,18 @@
         <div class="flex flex-wrap">
           <div class="flex items-center w-full mb-10">
             <div class="w-[60%] lg:w-1/3 mr-5 flex justify-center items-center">
-              <img
-                src="aset/icon_visi.png"
-                alt="icon visi"
-                class="w-4/5 h-full"
-              />
+              <picture>
+                <source type="image/webp" srcset="aset/webp\ foto/icon_visi.webp" />
+                <img
+                  class="w-full h-full lg:h-60 mx-auto rounded-lg"
+                  src="aset/webp foto/icon_visi.webp"
+                  alt="Icon Visi"
+                />
+              </picture>
             </div>
             <div class="w-full font-inter">
               <h2 class="font-bold text-3xl pb-2">Visi</h2>
-              <p class="text-xl">
+              <p class="text-lg md:text-xl">
                 Mewujudkan masyarakat yang adil dan damai, seluruh ciptaan Tuhan
                 hidup dalam damai sejahtera berdasar Pancasila.
               </p>
@@ -295,19 +362,22 @@
           <div class="flex items-center w-full mb-10">
             <div class="w-full font-inter mr-5">
               <h2 class="font-bold text-3xl pb-2">Misi</h2>
-              <p class="text-xl">
+              <p class="text-lg md:text-xl">
                 Mempersiapkan anak-anak usia dini menjadi manusia yang
                 berkepribadian tangguh, beriman kepada Tuhan yang Maha Esa,
                 mandiri, manusiawi, adil gender, peduli terhadap pemeliharaan
                 alam semesta dan cinta perdamaian.
               </p>
             </div>
-            <div class="w-[60%] lg:w-1/3 flex justify-center items-center">
-              <img
-                src="aset/icon_mission.png"
-                alt="icon misi"
-                class="w-full h-full"
-              />
+            <div class="w-[90%] lg:w-1/3 flex justify-center items-center">
+              <picture>
+                <source type="image/webp" srcset="aset/webp foto/icon_mission.webp" />
+                <img
+                  class="w-full h-full lg:h-60 mx-auto rounded-lg"
+                  src="aset/webp foto/icon_mission.webp"
+                  alt="Icon Misi"
+                />
+              </picture>
             </div>
           </div>
         </div>
@@ -343,13 +413,13 @@
       <div class="container">
         <div class="flex flex-wrap" data-aos="fade-up" data-aos-duration="2000">
           <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
-            <h3 class="font-bold text-2xl mb-2 text-slate-200">
+            <h3 class="font-bold text-2xl mb-2 text-white">
               Any Question?
             </h3>
             <a
-              class="flex flex-wrap hover:text-slate-500 mt-5"
+              class="flex flex-wrap text-slate-50 hover:text-slate-300 mt-5"
               aria-label="Maps"
-              href="http://maps.google.com/?q=Playgroup and Daycare Ananda Mentari"
+              href="http://maps.google.com/?q=Playgroup%20and%20Daycare%20Ananda%20Mentari"
             >
               <svg
                 class="w-6 mr-2"
@@ -364,16 +434,16 @@
               </svg>
               Selokan Mataram Jl. Seturan 15, Catur Tunggal
               <a
-                class="hover:text-slate-500"
+                class="text-slate-50 hover:text-slate-300"
                 aria-label="Maps"
-                href="http://maps.google.com/?q=Playgroup and Daycare Ananda Mentari"
+                href="http://maps.google.com/?q=Playgroup%20and%20Daycare%20Ananda%20Mentari"
               >
                 Depok, Sleman, D.I. Yogyakarta, Indonesia, 55281
               </a>
             </a>
 
             <a
-              class="flex flex-wrap hover:text-slate-500 mt-5"
+              class="flex flex-wrap text-slate-50 hover:text-slate-300 mt-5"
               aria-label="Chat on WhatsApp"
               href="https://wa.me/+6281211717144"
             >
@@ -391,11 +461,12 @@
               Chat on WhatsApp
             </a>
             <a
-              class="flex flex-wrap hover:text-slate-500 mt-5"
+              class="flex flex-wrap text-slate-50 hover:text-slate-300 mt-5"
               aria-label="Call"
               href="tel:(0274) 43 329 51"
             >
               <svg
+                id="svg_iconcall"
                 class="w-6 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -412,11 +483,12 @@
               (0274) 43 329 51
             </a>
             <a
-              class="flex flex-wrap hover:text-slate-500 mt-5"
-              aria-label="Call"
+              class="flex flex-wrap text-slate-50 hover:text-slate-300 mt-5"
+              aria-label="Email"
               href="mailto:@Paud.AnandaMentari.id"
             >
               <svg
+                id="svg_iconmail"
                 class="w-6 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -435,51 +507,57 @@
             </a>
           </div>
           <div class="w-full text-slate-200 px-4 mb-12 md:w-1/3">
-            <h3 class="font-semibold text-xl mb-5">Links</h3>
+            <h3 class="font-semibold text-white text-xl mb-5">Links</h3>
             <ul class="text-slate-300">
               <li>
                 <a
-                  href="#home"
-                  class="inline-block text-base hover:text-ijoterang mb-3"
+                  aria-label="nav home"
+                  href="index.html"
+                  class="inline-block text-base text-slate-50 hover:text-slate-300 mb-3"
                   >Home</a
                 >
               </li>
               <li>
                 <a
-                  href="#fitur"
-                  class="inline-block text-base hover:text-ijoterang mb-3"
+                aria-label="nav About"
+                  href="Founder.html"
+                  class="inline-block text-base text-slate-50 hover:text-slate-300 mb-3"
                   >About</a
                 >
               </li>
               <li>
                 <a
-                  href="#about"
-                  class="inline-block text-base hover:text-ijoterang mb-3"
-                  >Facility</a
-                >
+                aria-label="nav Galeri"
+                  href="galery.html"
+                  class="inline-block text-base text-slate-50 hover:text-slate-300 mb-3"
+                  >Galery
+                </a>
               </li>
               <li>
                 <a
-                  href="#kontak"
-                  class="inline-block text-base hover:text-ijoterang mb-3"
+                aria-label="nav Galeri"
+                  href="event.html"
+                  class="inline-block text-base text-slate-50 hover:text-slate-300 mb-3"
                   >Events</a
                 >
               </li>
               <li>
                 <a
-                  href="#kontak"
-                  class="inline-block text-base hover:text-ijoterang mb-3"
+                aria-label="nav Galeri"
+                  href="contact.html"
+                  class="inline-block text-base text-slate-50 hover:text-slate-300 mb-3"
                   >Contact Us</a
                 >
               </li>
             </ul>
           </div>
           <div class="w-full px-4 mb-12 md:w-1/3">
-            <h3 class="font-semibold text-slate-200 text-xl mb-5">
+            <h3 class="font-semibold text-slate-50  text-xl mb-5">
               Connect With Us
             </h3>
             <div class="flex items-center">
               <a
+              aria-label="nav youtube"
                 href="https://www.youtube.com/channel/UCwmrQS1oCZfREPg3rwTH7Tg/featured"
                 target="_blank"
                 class="w-9 h-9 mr-3 rounded-full flex justify-center items-center bg-white border border-slate-300 hover:border-ijoterang hover:bg-ijo hover:text-white"
@@ -498,7 +576,8 @@
                 </svg>
               </a>
               <a
-                href="https://www.instagram.com/almadhanif/"
+              aria-label="nav Instagram"
+                href="https://www.instagram.com/ananda_mentari/?hl=id"
                 target="_blank"
                 class="w-9 h-9 mr-3 rounded-full flex justify-center items-center bg-white border border-slate-300 hover:border-ijoterang hover:bg-ijo hover:text-white"
               >
@@ -516,6 +595,7 @@
                 </svg>
               </a>
               <a
+              aria-label="nav LinkedIn"
                 href="https://www.linkedin.com/in/firman-almadhani-kurniawan/"
                 target="_blank"
                 class="w-9 h-9 mr-3 rounded-full flex justify-center items-center bg-white border border-slate-300 hover:border-ijoterang hover:bg-ijo hover:text-white"
@@ -534,6 +614,8 @@
                 </svg>
               </a>
               <a
+              
+              aria-label="nav Github"
                 href="https://github.com/almadhanif"
                 target="_blank"
                 class="w-9 h-9 mr-3 rounded-full flex justify-center items-center bg-white border border-slate-300 hover:border-ijoterang hover:bg-ijo hover:text-white"
