@@ -1,16 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
-    <!-- Meta for SEO -->
-    <title>Ananda Mentari</title>
+    <title>Galery</title>
     <meta
       name="description"
       content="PAUD Ananda Mentari adalah sekolah atau instansi pendidikan anak usia dini yang memiliki berbagai fasilitas lengkap dan terbaik di Yogyakarta serta menggunakan bahasa inggris."
@@ -342,12 +336,13 @@
     </header>
     <!-- Header end -->
 
-    <!-- Hero section start -->
+    <!-- Ada background dibawah ini dinamis start -->
     <section
       id="home"
       class="h-screen bg-white/30 bg-cover bg-center bg-no-repeat"
       style="background-image: url(aset/outdoor/photo_outdoor_3.jpg)"
     >
+      <!-- Ada background diatas ini dinamis end -->
       <div class="w-full h-full py-20 bg-black/20">
         <div class="container">
           <div
@@ -402,7 +397,6 @@
         </div>
       </div>
     </section>
-    <!-- Hero section end -->
 
     <section
       id="galeri"
@@ -410,6 +404,7 @@
       style="background-image: url(aset/bg-ekskul.png)"
     >
       <div class="w-full bg-black/30">
+        <!-- Title dinamis start -->
         <div class="max-w-xl mx-auto text-center pt-16">
           <h2
             class="text-kuning capitalize mx-auto mb-2 pt-16 font-caveat font-bold text-3xl md:text-3xl lg:text-5xl"
@@ -431,9 +426,12 @@
 
           <h3 class="text-white text-xl font-poppins">18-19 Oktober 2022</h3>
         </div>
+        <!-- Title dinamis end -->
+
         <div class="container px-5 py-2 mx-auto lg:pt-16 lg:px-32">
           <div class="flex flex-wrap -m-1 md:-m-2">
             <div class="flex flex-wrap w-full lg:w-1/2">
+              <!-- 3 foto dinamis start -->
               <div class="w-full h-60 lg:w-1/2 p-1 md:p-2">
                 <picture>
                   <source
@@ -473,8 +471,10 @@
                   />
                 </picture>
               </div>
+              <!-- 3 foto dinamis end -->
             </div>
             <div class="flex flex-wrap w-full lg:w-1/2">
+              <!-- 3 foto dinamis start -->
               <div class="w-full h-60 p-1 md:p-2">
                 <picture>
                   <source
@@ -514,10 +514,12 @@
                   />
                 </picture>
               </div>
+              <!-- 3 foto dinamis end -->
             </div>
           </div>
         </div>
         <div class="overflow-hidden text-gray-700 pb-20">
+          <!-- Title dinamis start -->
           <div class="max-w-xl mx-auto text-center">
             <h2
               class="text-kuning capitalize mx-auto mb-2 pt-16 font-caveat font-bold text-3xl md:text-3xl lg:text-5xl"
@@ -529,7 +531,9 @@
               Rabu,19 Oktober 2022
             </h3>
           </div>
+          <!-- Title dinamis end -->
           <div class="container px-5 py-2 mx-auto lg:pt-12 lg:px-32">
+            <!-- 6 foto dinamis start -->
             <div class="flex flex-wrap -m-1 md:-m-2">
               <div class="flex flex-wrap w-full md:h-60 md:w-1/2 lg:w-1/3">
                 <div class="w-full p-1 md:p-2">
@@ -622,10 +626,12 @@
                 </div>
               </div>
             </div>
+            <!-- 6 foto dinamis end -->
           </div>
         </div>
       </div>
     </section>
+
     <section
       id="carouselExampleCrossfade"
       class="carousel slide carousel-fade relative"
@@ -655,6 +661,8 @@
           aria-label="Slide 3"
         ></button>
       </div>
+
+      <!-- Gambar carousel dinamis start -->
       <div class="carousel-inner relative w-full overflow-hidden">
         <div class="carousel-item active float-left w-full">
           <picture>
@@ -663,12 +671,11 @@
               srcset="aset/webp foto/foto anak/photo_guest_1.webp"
             />
             <img
-            src="aset/webp foto/foto anak/photo_guest_1.webp"
-            class="block w-full"
-            alt="Foto Outdoor 1"
-          />
+              src="aset/webp foto/foto anak/photo_guest_1.webp"
+              class="block w-full"
+              alt="Foto Outdoor 1"
+            />
           </picture>
-          
         </div>
         <div class="carousel-item float-left w-full">
           <picture>
@@ -677,12 +684,11 @@
               srcset="aset/outdoor/photo_outdoor_2.webp"
             />
             <img
-            src="aset/outdoor/photo_outdoor_2.webp"
-            class="block w-full"
-            alt="Foto Outdoor 2"
-          />
+              src="aset/outdoor/photo_outdoor_2.webp"
+              class="block w-full"
+              alt="Foto Outdoor 2"
+            />
           </picture>
-          
         </div>
         <div class="carousel-item float-left w-full">
           <picture>
@@ -691,14 +697,15 @@
               srcset="aset/webp foto/foto anak/photo_guest_1.webp"
             />
             <img
-            src="aset/outdoor/photo_outdoor_3.webp"
-            class="block w-full"
-            alt="Foto Outdoor 3"
-          />
+              src="aset/outdoor/photo_outdoor_3.webp"
+              class="block w-full"
+              alt="Foto Outdoor 3"
+            />
           </picture>
-          
         </div>
       </div>
+      <!-- Gambar carousel dinamis end -->
+
       <button
         aria-label="btnPrev"
         class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
@@ -713,7 +720,7 @@
         <span class="visually-hidden">Previous</span>
       </button>
       <button
-      aria-label="btnNext"
+        aria-label="btnNext"
         class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
         type="button"
         data-bs-target="#carouselExampleCrossfade"
@@ -747,14 +754,16 @@
         d="M0,55L40,49.5C80,44,160,33,240,40.3C320,48,400,73,480,73.3C560,73,640,48,720,36.7C800,26,880,29,960,36.7C1040,44,1120,55,1200,53.2C1280,51,1360,37,1440,33C1520,29,1600,37,1680,34.8C1760,33,1840,22,1920,29.3C2000,37,2080,62,2160,67.8C2240,73,2320,59,2400,55C2480,51,2560,59,2640,62.3C2720,66,2800,66,2880,66C2960,66,3040,66,3120,64.2C3200,62,3280,59,3360,58.7C3440,59,3520,62,3600,53.2C3680,44,3760,22,3840,22C3920,22,4000,44,4080,49.5C4160,55,4240,44,4320,40.3C4400,37,4480,40,4560,45.8C4640,51,4720,59,4800,51.3C4880,44,4960,22,5040,14.7C5120,7,5200,15,5280,18.3C5360,22,5440,22,5520,18.3C5600,15,5680,7,5720,3.7L5760,0L5760,110L5720,110C5680,110,5600,110,5520,110C5440,110,5360,110,5280,110C5200,110,5120,110,5040,110C4960,110,4880,110,4800,110C4720,110,4640,110,4560,110C4480,110,4400,110,4320,110C4240,110,4160,110,4080,110C4000,110,3920,110,3840,110C3760,110,3680,110,3600,110C3520,110,3440,110,3360,110C3280,110,3200,110,3120,110C3040,110,2960,110,2880,110C2800,110,2720,110,2640,110C2560,110,2480,110,2400,110C2320,110,2240,110,2160,110C2080,110,2000,110,1920,110C1840,110,1760,110,1680,110C1600,110,1520,110,1440,110C1360,110,1280,110,1200,110C1120,110,1040,110,960,110C880,110,800,110,720,110C640,110,560,110,480,110C400,110,320,110,240,110C160,110,80,110,40,110L0,110Z"
       ></path>
     </svg>
+
     <!-- Footer section start-->
-    <footer class="pt-12 pb-12 bg-[#4CA9D8]">
+    <footer id="footer" class="pt-12 pb-12 bg-[#4CA9D8]">
       <div class="container">
         <div class="flex flex-wrap" data-aos="fade-up" data-aos-duration="2000">
           <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
-            <h3 class="font-bold text-2xl mb-2 text-white">Any Question?</h3>
+            <!-- Link Dinamis start -->
+            <h3 class="font-bold text-2xl mb-2 text-slate-50">Any Question?</h3>
             <a
-              class="flex flex-wrap text-slate-50 hover:text-slate-300 mt-5"
+              class="flex flex-wrap text-slate-100 hover:text-slate-300 mt-5"
               aria-label="Maps"
               href="http://maps.google.com/?q=Playgroup%20and%20Daycare%20Ananda%20Mentari"
             >
@@ -771,7 +780,7 @@
               </svg>
               Selokan Mataram Jl. Seturan 15, Catur Tunggal
               <a
-                class="text-slate-50 hover:text-slate-300"
+                class="text-slate-100 hover:text-slate-300"
                 aria-label="Maps"
                 href="http://maps.google.com/?q=Playgroup%20and%20Daycare%20Ananda%20Mentari"
               >
@@ -780,7 +789,7 @@
             </a>
 
             <a
-              class="flex flex-wrap text-slate-50 hover:text-slate-300 mt-5"
+              class="flex flex-wrap text-slate-100 hover:text-slate-300 mt-5"
               aria-label="Chat on WhatsApp"
               href="https://wa.me/+6281211717144"
             >
@@ -798,7 +807,7 @@
               Chat on WhatsApp
             </a>
             <a
-              class="flex flex-wrap text-slate-50 hover:text-slate-300 mt-5"
+              class="flex flex-wrap text-slate-100 hover:text-slate-300 mt-5"
               aria-label="Call"
               href="tel:(0274) 43 329 51"
             >
@@ -820,7 +829,7 @@
               (0274) 43 329 51
             </a>
             <a
-              class="flex flex-wrap text-slate-50 hover:text-slate-300 mt-5"
+              class="flex flex-wrap text-slate-100 hover:text-slate-300 mt-5"
               aria-label="Email"
               href="mailto:@Paud.AnandaMentari.id"
             >
@@ -842,59 +851,56 @@
 
               Paud.AnandaMentari.id
             </a>
+            <!-- Link dinamis end -->
           </div>
-          <div class="w-full text-slate-200 px-4 mb-12 md:w-1/3">
+          <div class="w-full px-4 mb-12 md:w-1/3">
             <h3 class="font-semibold text-white text-xl mb-5">Links</h3>
-            <ul class="text-slate-300">
+            <ul class="text-slate-100">
               <li>
                 <a
-                  aria-label="nav home"
                   href="index.html"
-                  class="inline-block text-base text-slate-50 hover:text-slate-300 mb-3"
+                  class="inline-block text-base hover:text-slate-300 mb-3"
                   >Home</a
                 >
               </li>
               <li>
                 <a
-                  aria-label="nav About"
-                  href="Founder.html"
-                  class="inline-block text-base text-slate-50 hover:text-slate-300 mb-3"
+                  href="Filosofi.html"
+                  class="inline-block text-base hover:text-slate-300 mb-3"
                   >About</a
                 >
               </li>
               <li>
                 <a
-                  aria-label="nav Galeri"
                   href="galery.html"
-                  class="inline-block text-base text-slate-50 hover:text-slate-300 mb-3"
-                  >Galery
-                </a>
+                  class="inline-block text-base hover:text-slate-300 mb-3"
+                  >Galery</a
+                >
               </li>
               <li>
                 <a
-                  aria-label="nav Galeri"
                   href="event.html"
-                  class="inline-block text-base text-slate-50 hover:text-slate-300 mb-3"
+                  class="inline-block text-base hover:text-slate-300 mb-3"
                   >Events</a
                 >
               </li>
               <li>
                 <a
-                  aria-label="nav Galeri"
                   href="contact.html"
-                  class="inline-block text-base text-slate-50 hover:text-slate-300 mb-3"
+                  class="inline-block text-base hover:text-ijoterang mb-3"
                   >Contact Us</a
                 >
               </li>
             </ul>
           </div>
+
           <div class="w-full px-4 mb-12 md:w-1/3">
-            <h3 class="font-semibold text-slate-50 text-xl mb-5">
+            <h3 class="font-semibold text-white text-xl mb-5">
               Connect With Us
             </h3>
+            <!-- Medsos Dinamis start -->
             <div class="flex items-center">
               <a
-                aria-label="nav youtube"
                 href="https://www.youtube.com/channel/UCwmrQS1oCZfREPg3rwTH7Tg/featured"
                 target="_blank"
                 class="w-9 h-9 mr-3 rounded-full flex justify-center items-center bg-white border border-slate-300 hover:border-ijoterang hover:bg-ijo hover:text-white"
@@ -913,8 +919,7 @@
                 </svg>
               </a>
               <a
-                aria-label="nav Instagram"
-                href="https://www.instagram.com/ananda_mentari/?hl=id"
+                href="https://www.instagram.com/almadhanif/"
                 target="_blank"
                 class="w-9 h-9 mr-3 rounded-full flex justify-center items-center bg-white border border-slate-300 hover:border-ijoterang hover:bg-ijo hover:text-white"
               >
@@ -932,7 +937,6 @@
                 </svg>
               </a>
               <a
-                aria-label="nav LinkedIn"
                 href="https://www.linkedin.com/in/firman-almadhani-kurniawan/"
                 target="_blank"
                 class="w-9 h-9 mr-3 rounded-full flex justify-center items-center bg-white border border-slate-300 hover:border-ijoterang hover:bg-ijo hover:text-white"
@@ -951,7 +955,6 @@
                 </svg>
               </a>
               <a
-                aria-label="nav Github"
                 href="https://github.com/almadhanif"
                 target="_blank"
                 class="w-9 h-9 mr-3 rounded-full flex justify-center items-center bg-white border border-slate-300 hover:border-ijoterang hover:bg-ijo hover:text-white"
@@ -970,11 +973,12 @@
                 </svg>
               </a>
             </div>
+            <!-- medson Dinamis end -->
           </div>
         </div>
         <!-- Made by love -->
         <div
-          class="py-8 border-t border-white text-slate-200 flex justify-center"
+          class="py-8 border-t border-white text-slate-100 hover:text-slate-300 flex justify-center"
         >
           <span class="pr-1"
             >Copyright&copy;2022 All right reserved <span>|</span></span
