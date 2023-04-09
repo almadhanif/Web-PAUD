@@ -4,19 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
+    <title>Dashboard - Paud terbaik jogja - Paud Ananda Mentari</title>
     <!-- Meta for SEO -->
     <meta
       name="description"
-      content="PAUD Ananda Mentari adalah sekolah atau instansi pendidikan anak usia dini yang memiliki berbagai fasilitas lengkap dan terbaik di Yogyakarta serta menggunakan bahasa inggris."
+      content="PAUD Ananda Mentari adalah sekolah pendidikan anak usia dini yang memiliki fasilitas lengkap dan terbaik di Yogyakarta serta menggunakan bahasa inggris."
     />
 
     <!-- Google / Search Engine Tags -->
     <meta itemprop="name" content="Ananda Mentari" />
+
     <meta
-      itemprop="description"
-      content="PAUD Ananda Mentari adalah sekolah atau instansi pendidikan anak usia dini yang memiliki berbagai fasilitas lengkap dan terbaik di Yogyakarta serta menggunakan bahasa inggris."
+      name="keywords"
+      content="paud terbaik, paud terbaik yogya, paud jogja, paud bahasa inggris jogja, paud bahasa inggris terbaik"
     />
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+
     <meta
       itemprop="image"
       content="https://3.bp.blogspot.com/-1ai0XOzDuuA/W6oUYLhTsYI/AAAAAAAC1tU/inT5dgVLMbc1-j5W77VIyWmuCHBsW7_9wCLcBGAs/s1600/Playgroup%2BAnanda%2BMentari.jpg"
@@ -97,28 +103,28 @@
         theme: {
           container: {
             center: true,
-            padding: "16px",
+            padding: '16px',
           },
           extend: {
             colors: {
-              hijaumuda: "#94EC08",
-              hijautua: "#98E51E",
-              kuning: "#F4C447",
-              darkblue: "#25316D",
-              biru: "#24DCF2",
-              ijo: "#71A72D",
-              gelap: "#0B2027",
-              terang: "#8CBAB4",
+              hijaumuda: '#94EC08',
+              hijautua: '#98E51E',
+              kuning: '#F4C447',
+              darkblue: '#25316D',
+              biru: '#24DCF2',
+              ijo: '#71A72D',
+              gelap: '#0B2027',
+              terang: '#8CBAB4',
             },
             fontFamily: {
-              caveat: ["Caveat Brush"],
-              fuzzy: ["Fuzzy Bubbles"],
-              poppins: ["Poppins"],
-              peralta: ["Peralta"],
-              inter: ["Inter"],
+              caveat: ['Caveat Brush'],
+              fuzzy: ['Fuzzy Bubbles'],
+              poppins: ['Poppins'],
+              peralta: ['Peralta'],
+              inter: ['Inter'],
             },
             screens: {
-              "2xl": "1320px",
+              '2xl': '1320px',
             },
           },
         },
@@ -140,18 +146,18 @@
     >
       <div class="container">
         <div class="flex items-center justify-between relative">
-          <div class="px-3 xl:ml-32">
+          <h1 class="px-3 xl:ml-32">
             <a href="#" aria-label="Kembali ke awal home">
               <picture>
                 <source type="image/webp" srcset="aset/mainlogo_1.webp" />
                 <img
                   class="w-64 h-32 bg-cover"
                   src="/aset/mainlogo_1.webp"
-                  alt="Ananda Mentari Logo"
+                  alt="PAUD Ananda Mentari Logo"
                 />
               </picture>
             </a>
-          </div>
+          </h1>
           <div class="flex items-center mr-20 px-3">
             <button
               aria-label="Dropdown Menu"
@@ -338,57 +344,72 @@
     </header>
     <!-- Header end -->
 
-    <!-- Carousel Dinamis start -->
     <section
       id="carouselExampleCrossfade"
       class="carousel slide carousel-fade relative"
       data-bs-ride="carousel"
+      data-te-carousel-init
+      data-te-carousel-slide
     >
+      <!--Carousel indicators-->
       <div
-        class="carousel-indicators lg:absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4"
+        class="carousel-indicators lg:absolute inset-x-0 bottom-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+        data-te-carousel-indicators
       >
         <button
           type="button"
-          data-bs-target="#carouselExampleCrossfade"
-          data-bs-slide-to="0"
-          class="active"
+          data-te-target="#carouselExampleCrossfade"
+          data-te-slide-to="0"
+          data-te-carousel-active
+          class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
           aria-current="true"
           aria-label="Slide 1"
         ></button>
         <button
           type="button"
-          data-bs-target="#carouselExampleCrossfade"
-          data-bs-slide-to="1"
+          data-te-target="#carouselExampleCrossfade"
+          data-te-slide-to="1"
+          class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
           aria-label="Slide 2"
         ></button>
         <button
           type="button"
-          data-bs-target="#carouselExampleCrossfade"
-          data-bs-slide-to="2"
+          data-te-target="#carouselExampleCrossfade"
+          data-te-slide-to="2"
+          class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
           aria-label="Slide 3"
         ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCrossfade"
-          data-bs-slide-to="3"
-          aria-label="Slide 4"
-        ></button>
       </div>
+
+      <!--Carousel items-->
       <div class="carousel-inner relative w-full overflow-hidden">
-        <div class="carousel-item active float-left w-full">
-          <picture>
-            <source
-              type="image/webp"
-              srcset="aset/outdoor/photo_outdoor_4.webp"
-            />
-            <img
-              src="aset/outdoor/photo_outdoor_4.webp"
-              class="block w-full h-full xl:h-screen"
-              alt="Foto Carousel 1"
-            />
-          </picture>
+        <!--First item-->
+        <div
+          class="float-left -mr-[100%] w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+          data-te-carousel-fade
+          data-te-carousel-item
+          data-te-carousel-active
+        >
+          <div class="carousel-item active float-left w-full">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="aset/outdoor/photo_outdoor_4.webp"
+              />
+              <img
+                src="aset/outdoor/photo_outdoor_4.webp"
+                class="block w-full h-full xl:h-screen"
+                alt="Foto Carousel 1"
+              />
+            </picture>
+          </div>
         </div>
-        <div class="carousel-item float-left w-full">
+        <!--Second item-->
+        <div
+          class="float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+          data-te-carousel-fade
+          data-te-carousel-item
+        >
           <picture>
             <source
               type="image/webp"
@@ -401,7 +422,12 @@
             />
           </picture>
         </div>
-        <div class="carousel-item float-left w-full">
+        <!--Third item-->
+        <div
+          class="float-left -mr-[100%] w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+          data-te-carousel-fade
+          data-te-carousel-item
+        >
           <picture>
             <source
               type="image/webp"
@@ -414,42 +440,66 @@
             />
           </picture>
         </div>
-        <div class="carousel-item float-left w-full">
-          <picture>
-            <source type="image/webp" srcset="aset/teaparty/photo_tea_2.webp" />
-            <img
-              src="aset/teaparty/photo_tea_2.webp"
-              class="block w-full h-full xl:h-screen"
-              alt="Foto Carousel 4"
-            />
-          </picture>
-        </div>
       </div>
+
+      <!--Carousel controls - prev item-->
       <button
-        class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+        class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
         type="button"
-        data-bs-target="#carouselExampleCrossfade"
-        data-bs-slide="prev"
+        data-te-target="#carouselExampleCrossfade"
+        data-te-slide="prev"
       >
+        <span class="inline-block h-8 w-8">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-6 w-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5L8.25 12l7.5-7.5"
+            />
+          </svg>
+        </span>
         <span
-          class="carousel-control-prev-icon inline-block bg-no-repeat"
-          aria-hidden="true"
-        ></span>
-        <span class="visually-hidden">Previous</span>
+          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+          >Previous</span
+        >
       </button>
+      <!--Carousel controls - next item-->
       <button
-        class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+        class="carousel-control-next absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
         type="button"
-        data-bs-target="#carouselExampleCrossfade"
-        data-bs-slide="next"
+        data-te-target="#carouselExampleCrossfade"
+        data-te-slide="next"
       >
+        <span class="inline-block h-8 w-8">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-6 w-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.25 4.5l7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </span>
         <span
-          class="carousel-control-next-icon inline-block bg-no-repeat"
-          aria-hidden="true"
-        ></span>
-        <span class="visually-hidden">Next</span>
+          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+          >Next</span
+        >
       </button>
     </section>
+
     <!-- Carousel Dinamis start -->
 
     <!-- 4 kotak section start -->
@@ -475,10 +525,11 @@
               </picture>
             </div>
             <h1 class="font-sans font-bold mt-16 md:mt-8 lg:mt-16 text-2xl">
-              Guru
+              Guru Yang Kompeten
             </h1>
             <h2 class="capitalize font-poppins">
-              ananda mentari memiliki tenaga pengajar yang berkompeten
+              Guru-guru di Ananda Mentari adalah pendidik, komunikator,
+              fasilitator, dan motivator untuk setiap murid.
             </h2>
             <!-- Logo dan text Dinamis start -->
           </div>
@@ -506,7 +557,9 @@
               Kurikulum
             </h1>
             <h2 class="font-poppins capitalize">
-              Tukerin dikembangkan pada tahun 2022 dan saat ini versi 1.0
+              Montessori adalah metode pembelajaran yang didasarkan pada
+              kegiatan kesadaran diri, pembelajaran langsung, dan permainan
+              kolaboratif.
             </h2>
             <!-- Logo dan text Dinamis End -->
           </div>
@@ -534,7 +587,9 @@
               Fasilitas
             </h1>
             <h2 class="capitalize font-poppins">
-              Tukerin dikembangkan pada tahun 2022 dan saat ini versi 1.0
+              Ruangan kelas ber-AC, sarana & prasarana lengkap, makan siang dan
+              snack 2 kali sehari, field trip, flexible-seating classroom,
+              halaman luas, parkir luas, dsb.
             </h2>
             <!-- Logo dan text Dinamis End -->
           </div>
@@ -561,9 +616,7 @@
             >
               filosofi
             </h1>
-            <h2 class="capitalize font-poppins">
-              Tukerin dikembangkan pada tahun 2022 dan saat ini versi 1.0
-            </h2>
+            <h2 class="capitalize font-poppins">Sehat - Cerdas - Ceria</h2>
             <!-- Logo dan text Dinamis end -->
           </div>
         </div>
@@ -584,23 +637,17 @@
         </h1>
         <!-- video dan Text Dinamis start -->
         <p class="font-sans text-xl text-center">
-          Budi Mulia Dua (BMD) adalah sekolah Islam, Bilingual, yang bertaraf
-          Internasional. Kurikulum di Budi Mulia Dua terdiri dari Cambridge,
-          Nasional, Islamic Montessori, dan Kurikulum Budi Mulia Dua yang
-          dikembangkan oleh tim dan guru-guru di Budi Mulia Dua.
-        </p>
-        <p class="font-sans text-xl text-center">
-          DUA di Budi Mulia Dua berarti DUnia Akhirat. Tujuan Budi Mulia Dua
-          (BMD) didirikan adalah untuk menjadi sarana kita yang berkecimpung di
-          BMD untuk menabung amal dan ibadah di Dunia ini, untuk tabungan pahala
-          kita di Akhirat nanti. (DUA:DUniaAkhirat).
+          Di ANANDA MENTARI setiap anak mendapat stimulasi terbaik dengan
+          menyenangkan, menarik bermain dan eksplorasi untuk mengembangkan
+          keterampilan motorik mereka, diri mereka, keterampilan pra-membaca,
+          matematika pemikiran awal (dasar matematika Singapura), bahasa dan
+          keterampilan artistik. Di sekolah kami,, pembangunan sosial, emosional
+          dan fisik intelektual terjadi untuk setiap anak di tingkat mereka
+          sendiri dan merangsang setiap hari melalui kegiatan berbasis tema
+          kita.
         </p>
         <video class="w-full sm:w-11/12 lg:w-3/4 h-500 mx-auto py-10" controls>
-          <source
-            src="aset/Karya Dhika Residence.mp4"
-            type="video/mp4"
-            loading="lazy"
-          />
+          <source src="aset/Intro.mp4" type="video/mp4" loading="lazy" />
 
           Your browser does not support the video tag.
         </video>
@@ -672,9 +719,9 @@
                         Intelligent
                       </h2>
                       <p class="flex text-black text-base">
-                        Untuk menabung amal dan ibadah di Dunia ini, untuk
-                        tabungan pahala kita di Akhirat nanti.
-                        (DUA:DuniaAkhirat).
+                        Multiple Intelligence, Learning Style, Brain-based
+                        Learning, Local Wisdom, Nationalism and
+                        Internationalism.
                       </p>
                     </div>
                     <!-- text Dinamis end -->
@@ -702,9 +749,9 @@
                         Strong Character
                       </h2>
                       <p class="flex text-black text-base">
-                        Untuk menabung amal dan ibadah di Dunia ini, untuk
-                        tabungan pahala kita di Akhirat nanti.
-                        (DUA:DuniaAkhirat).
+                        Every child gets the best stimulation with fun,
+                        interesting play and exploration to develop their motor
+                        skills, self, pre-reading skills, early thinking math.
                       </p>
                     </div>
                     <!-- text Dinamis end -->
@@ -732,9 +779,8 @@
                         Globally Oriented
                       </h2>
                       <p class="flex text-black text-base">
-                        Untuk menabung amal dan ibadah di Dunia ini, untuk
-                        tabungan pahala kita di Akhirat nanti.
-                        (DUA:DuniaAkhirat).
+                        Has an English program to prepare future generations to
+                        become citizens of the world.
                       </p>
                     </div>
                     <!-- text Dinamis end -->
@@ -881,10 +927,10 @@
                   <picture>
                     <source
                       type="image/webp"
-                      srcset="aset/webp foto/foto anak/photo_guest_1.webp"
+                      srcset="aset/webp foto/foto anak/photo_guest_3.webp"
                     />
                     <img
-                      src="aset/webp foto/foto anak/photo_guest_1.webp"
+                      src="aset/webp foto/foto anak/photo_guest_3.webp"
                       loading="lazy"
                       alt="Foto Ruang Belajar"
                       class="w-full h-full"
@@ -918,7 +964,7 @@
                       srcset="aset/webp foto/foto anak/photo_guest_3.webp"
                     />
                     <img
-                      src="aset/webp foto/foto anak/photo_guest_3.webp"
+                      src="aset/webp foto/foto anak/photo_guest_1.webp"
                       loading="lazy"
                       alt="Foto Gedung Sekolah"
                       class="w-full h-full"
@@ -926,218 +972,14 @@
                   </picture>
 
                   <h2 class="font-inter text-2xl text-black text-center mt-4">
-                    Gedung Sekolah
+                    Ruang Tunggu
                   </h2>
                 </div>
                 <!-- text header end -->
               </div>
             </div>
           </div>
-          <div class="md:col-span-2 lg:col-span-1 my-5">
-            <!-- button start -->
-            <div class="w-full h-full">
-              <!-- graph -->
-              <div
-                class="shadow-lg bg-kuning hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md transition ease-in-out duration-200"
-              >
-                <!-- text header -->
-                <div>
-                  <picture>
-                    <source
-                      type="image/webp"
-                      srcset="aset/webp foto/foto anak/photo_tea_1.webp"
-                    />
-                    <img
-                      src="aset/webp foto/foto anak/photo_tea_1.webp"
-                      loading="lazy"
-                      alt="Foto Taman Bermain"
-                      class="w-full h-full"
-                    />
-                  </picture>
 
-                  <h2 class="font-inter text-2xl text-black text-center mt-4">
-                    Taman Bermain
-                  </h2>
-                </div>
-                <!-- text header end -->
-              </div>
-            </div>
-          </div>
-          <div class="md:col-span-2 lg:col-span-1 my-5">
-            <!-- button start -->
-            <div class="w-full h-full">
-              <!-- graph -->
-              <div
-                class="shadow-lg bg-kuning hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md transition ease-in-out duration-200"
-              >
-                <!-- text header -->
-                <div>
-                  <picture>
-                    <source
-                      type="image/webp"
-                      srcset="aset/webp foto/foto anak/photo_tea_3.webp"
-                    />
-                    <img
-                      src="aset/webp foto/foto anak/photo_tea_3.webp"
-                      loading="lazy"
-                      alt="Foto Kantin"
-                      class="w-full h-full"
-                    />
-                  </picture>
-
-                  <h2 class="font-inter text-2xl text-black text-center mt-4">
-                    Kantin
-                  </h2>
-                </div>
-                <!-- text header end -->
-              </div>
-            </div>
-          </div>
-          <div class="md:col-span-2 lg:col-span-1 my-5">
-            <!-- button start -->
-            <div class="w-full h-full">
-              <!-- graph -->
-              <div
-                class="shadow-lg bg-kuning hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md transition ease-in-out duration-200"
-              >
-                <!-- text header -->
-                <div>
-                  <picture>
-                    <source
-                      type="image/webp"
-                      srcset="aset/webp foto/foto anak/photo_guest_1.webp"
-                    />
-                    <img
-                      src="aset/webp foto/foto anak/photo_guest_1.webp"
-                      loading="lazy"
-                      alt="Foto Ruang Belajar"
-                      class="w-full h-full"
-                    />
-                  </picture>
-
-                  <h2 class="font-inter text-2xl text-black text-center mt-4">
-                    Ruang Belajar
-                  </h2>
-                </div>
-                <!-- text header end -->
-              </div>
-            </div>
-          </div>
-          <!-- Setiap card Dinamis end -->
-        </div>
-        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-          <!-- Setiap card Dinamis start -->
-          <div class="md:col-span-2 lg:col-span-1 my-5">
-            <!-- button start -->
-            <div class="w-full h-full">
-              <!-- graph -->
-              <div
-                class="shadow-lg bg-kuning hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md transition ease-in-out duration-200"
-              >
-                <!-- text header -->
-                <div>
-                  <picture>
-                    <source
-                      type="image/webp"
-                      srcset="aset/webp foto/foto anak/photo_guest_3.webp"
-                    />
-                    <img
-                      src="aset/webp foto/foto anak/photo_guest_3.webp"
-                      loading="lazy"
-                      alt="Foto Gedung Sekolah"
-                      class="w-full h-full"
-                    />
-                  </picture>
-
-                  <h2 class="font-inter text-2xl text-black text-center mt-4">
-                    Gedung Sekolah
-                  </h2>
-                </div>
-                <!-- text header end -->
-              </div>
-            </div>
-          </div>
-          <div class="md:col-span-2 lg:col-span-1 my-5">
-            <div class="w-full h-full">
-              <div
-                class="shadow-lg bg-kuning hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md transition ease-in-out duration-200"
-              >
-                <div>
-                  <picture>
-                    <source
-                      type="image/webp"
-                      srcset="aset/webp foto/foto anak/photo_tea_1.webp"
-                    />
-                    <img
-                      src="aset/webp foto/foto anak/photo_tea_1.webp"
-                      loading="lazy"
-                      alt="Foto Taman Bermain"
-                      class="w-full h-full"
-                    />
-                  </picture>
-
-                  <h2 class="font-inter text-2xl text-black text-center mt-4">
-                    Taman Bermain
-                  </h2>
-                </div>
-                <!-- text header end -->
-              </div>
-            </div>
-          </div>
-          <div class="md:col-span-2 lg:col-span-1 my-5">
-            <div class="w-full h-full">
-              <div
-                class="shadow-lg bg-kuning hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md transition ease-in-out duration-200"
-              >
-                <div>
-                  <picture>
-                    <source
-                      type="image/webp"
-                      srcset="aset/webp foto/foto anak/photo_tea_3.webp"
-                    />
-                    <img
-                      src="aset/webp foto/foto anak/photo_tea_3.webp"
-                      loading="lazy"
-                      alt="Foto Kantin"
-                      class="w-full h-full"
-                    />
-                  </picture>
-
-                  <h2 class="font-inter text-2xl text-black text-center mt-4">
-                    Kantin
-                  </h2>
-                </div>
-                <!-- text header end -->
-              </div>
-            </div>
-          </div>
-          <div class="md:col-span-2 lg:col-span-1 my-5">
-            <div class="w-full h-full">
-              <div
-                class="shadow-lg bg-kuning hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md transition ease-in-out duration-200"
-              >
-                <div>
-                  <picture>
-                    <source
-                      type="image/webp"
-                      srcset="aset/webp foto/foto anak/photo_guest_1.webp"
-                    />
-                    <img
-                      src="aset/webp foto/foto anak/photo_guest_1.webp"
-                      loading="lazy"
-                      alt="Foto Ruang Belajar"
-                      class="w-full h-full"
-                    />
-                  </picture>
-
-                  <h2 class="font-inter text-2xl text-black text-center mt-4">
-                    Ruang Belajar
-                  </h2>
-                </div>
-                <!-- text header end -->
-              </div>
-            </div>
-          </div>
           <!-- Setiap card Dinamis end -->
         </div>
       </div>
@@ -1153,20 +995,14 @@
       <div
         class="w-full h-full p-20 pt-16 overflow-y-scroll my-auto backdrop-blur-sm bg-white/40"
       >
-        <h1 class="font-kaisei text-2xl lg:text-4xl font-bold text-center pb-5">
-          Welcome to Ananda Mentari
+        <h1
+          class="font-kaisei capitalize text-2xl lg:text-4xl font-bold text-center pb-5"
+        >
+          Quotes PAUD ananda mentari
         </h1>
         <p class="font-sans text-base lg:text-xl text-center">
-          Budi Mulia Dua (BMD) adalah sekolah Islam, Bilingual, yang bertaraf
-          Internasional. Kurikulum di Budi Mulia Dua terdiri dari Cambridge,
-          Nasional, Islamic Montessori, dan Kurikulum Budi Mulia Dua yang
-          dikembangkan oleh tim dan guru-guru di Budi Mulia Dua.
-        </p>
-        <p class="font-sans text-base lg:text-xl text-center">
-          DUA di Budi Mulia Dua berarti DUnia Akhirat. Tujuan Budi Mulia Dua
-          (BMD) didirikan adalah untuk menjadi sarana kita yang berkecimpung di
-          BMD untuk menabung amal dan ibadah di Dunia ini, untuk tabungan pahala
-          kita di Akhirat nanti. (DUA:DUniaAkhirat).
+          "Apa yang aku ingat tentang sekolah adalah kenangan-kenangan yang aku
+          buat bersama teman-teman." - J. J. Watt, Atlet American Football
         </p>
         <div class="w-full flex justify-center">
           <img
@@ -1225,10 +1061,10 @@
                     <picture>
                       <source
                         type="image/webp"
-                        srcset="aset/webp foto/foto anak/photo_guest_3.webp"
+                        srcset="aset/webp foto/foto anak/photo_sport_5.webp"
                       />
                       <img
-                        src="aset/webp foto/foto anak/photo_guest_3.webp"
+                        src="aset/webp foto/foto anak/photo_sport_5.webp"
                         loading="lazy"
                         alt="Foto Gedung Sekolah"
                         class="w-full h-full"
@@ -1236,37 +1072,7 @@
                     </picture>
 
                     <h2 class="font-inter text-2xl text-black text-center mt-4">
-                      Gedung Sekolah
-                    </h2>
-                  </div>
-                  <!-- text header end -->
-                </div>
-              </div>
-            </div>
-            <div class="md:col-span-2 lg:col-span-1 my-5">
-              <!-- button start -->
-              <div class="w-full h-full">
-                <!-- graph -->
-                <div
-                  class="shadow-lg bg-white hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md transition ease-in-out duration-200"
-                >
-                  <!-- text header -->
-                  <div>
-                    <picture>
-                      <source
-                        type="image/webp"
-                        srcset="aset/webp foto/foto anak/photo_tea_1.webp"
-                      />
-                      <img
-                        src="aset/webp foto/foto anak/photo_tea_1.webp"
-                        loading="lazy"
-                        alt="Foto Taman Bermain"
-                        class="w-full h-full"
-                      />
-                    </picture>
-
-                    <h2 class="font-inter text-2xl text-black text-center mt-4">
-                      Taman Bermain
+                      Dance
                     </h2>
                   </div>
                   <!-- text header end -->
@@ -1290,295 +1096,20 @@
                       <img
                         src="aset/webp foto/foto anak/photo_tea_3.webp"
                         loading="lazy"
-                        alt="Foto Kantin"
-                        class="w-full h-full"
-                      />
-                    </picture>
-
-                    <h2 class="font-inter text-2xl text-black text-center mt-4">
-                      Kantin
-                    </h2>
-                  </div>
-                  <!-- text header end -->
-                </div>
-              </div>
-            </div>
-            <div class="md:col-span-2 lg:col-span-1 my-5">
-              <!-- button start -->
-              <div class="w-full h-full">
-                <!-- graph -->
-                <div
-                  class="shadow-lg bg-white hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md transition ease-in-out duration-200"
-                >
-                  <!-- text header -->
-                  <div>
-                    <picture>
-                      <source
-                        type="image/webp"
-                        srcset="aset/webp foto/foto anak/photo_guest_1.webp"
-                      />
-                      <img
-                        src="aset/webp foto/foto anak/photo_guest_1.webp"
-                        loading="lazy"
-                        alt="Foto Ruang Belajar"
-                        class="w-full h-full"
-                      />
-                    </picture>
-
-                    <h2 class="font-inter text-2xl text-black text-center mt-4">
-                      Ruang Belajar
-                    </h2>
-                  </div>
-                  <!-- text header end -->
-                </div>
-              </div>
-            </div>
-            <!-- 3 button end -->
-          </div>
-          <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-            <div class="md:col-span-2 lg:col-span-1 my-5">
-              <!-- button start -->
-              <div class="w-full h-full">
-                <!-- graph -->
-                <div
-                  class="shadow-lg bg-white hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md transition ease-in-out duration-200"
-                >
-                  <!-- text header -->
-                  <div>
-                    <picture>
-                      <source
-                        type="image/webp"
-                        srcset="aset/webp foto/foto anak/photo_guest_3.webp"
-                      />
-                      <img
-                        src="aset/webp foto/foto anak/photo_guest_3.webp"
-                        loading="lazy"
-                        alt="Foto Gedung Sekolah"
-                        class="w-full h-full"
-                      />
-                    </picture>
-
-                    <h2 class="font-inter text-2xl text-black text-center mt-4">
-                      Gedung Sekolah
-                    </h2>
-                  </div>
-                  <!-- text header end -->
-                </div>
-              </div>
-            </div>
-            <div class="md:col-span-2 lg:col-span-1 my-5">
-              <!-- button start -->
-              <div class="w-full h-full">
-                <!-- graph -->
-                <div
-                  class="shadow-lg bg-white hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md transition ease-in-out duration-200"
-                >
-                  <!-- text header -->
-                  <div>
-                    <picture>
-                      <source
-                        type="image/webp"
-                        srcset="aset/webp foto/foto anak/photo_tea_1.webp"
-                      />
-                      <img
-                        src="aset/webp foto/foto anak/photo_tea_1.webp"
-                        loading="lazy"
                         alt="Foto Taman Bermain"
                         class="w-full h-full"
                       />
                     </picture>
 
                     <h2 class="font-inter text-2xl text-black text-center mt-4">
-                      Taman Bermain
+                      Memasak
                     </h2>
                   </div>
                   <!-- text header end -->
                 </div>
               </div>
             </div>
-            <div class="md:col-span-2 lg:col-span-1 my-5">
-              <!-- button start -->
-              <div class="w-full h-full">
-                <!-- graph -->
-                <div
-                  class="shadow-lg bg-white hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md transition ease-in-out duration-200"
-                >
-                  <!-- text header -->
-                  <div>
-                    <picture>
-                      <source
-                        type="image/webp"
-                        srcset="aset/webp foto/foto anak/photo_tea_3.webp"
-                      />
-                      <img
-                        src="aset/webp foto/foto anak/photo_tea_3.webp"
-                        loading="lazy"
-                        alt="Foto Kantin"
-                        class="w-full h-full"
-                      />
-                    </picture>
 
-                    <h2 class="font-inter text-2xl text-black text-center mt-4">
-                      Kantin
-                    </h2>
-                  </div>
-                  <!-- text header end -->
-                </div>
-              </div>
-            </div>
-            <div class="md:col-span-2 lg:col-span-1 my-5">
-              <!-- button start -->
-              <div class="w-full h-full">
-                <!-- graph -->
-                <div
-                  class="shadow-lg bg-white hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md transition ease-in-out duration-200"
-                >
-                  <!-- text header -->
-                  <div>
-                    <picture>
-                      <source
-                        type="image/webp"
-                        srcset="aset/webp foto/foto anak/photo_guest_1.webp"
-                      />
-                      <img
-                        src="aset/webp foto/foto anak/photo_guest_1.webp"
-                        loading="lazy"
-                        alt="Foto Ruang Belajar"
-                        class="w-full h-full"
-                      />
-                    </picture>
-
-                    <h2 class="font-inter text-2xl text-black text-center mt-4">
-                      Ruang Belajar
-                    </h2>
-                  </div>
-                  <!-- text header end -->
-                </div>
-              </div>
-            </div>
-            <!-- 3 button end -->
-          </div>
-          <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-            <div class="md:col-span-2 lg:col-span-1 my-5">
-              <!-- button start -->
-              <div class="w-full h-full">
-                <!-- graph -->
-                <div
-                  class="shadow-lg bg-white hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md transition ease-in-out duration-200"
-                >
-                  <!-- text header -->
-                  <div>
-                    <picture>
-                      <source
-                        type="image/webp"
-                        srcset="aset/webp foto/foto anak/photo_guest_3.webp"
-                      />
-                      <img
-                        src="aset/webp foto/foto anak/photo_guest_3.webp"
-                        loading="lazy"
-                        alt="Foto Gedung Sekolah"
-                        class="w-full h-full"
-                      />
-                    </picture>
-
-                    <h2 class="font-inter text-2xl text-black text-center mt-4">
-                      Gedung Sekolah
-                    </h2>
-                  </div>
-                  <!-- text header end -->
-                </div>
-              </div>
-            </div>
-            <div class="md:col-span-2 lg:col-span-1 my-5">
-              <!-- button start -->
-              <div class="w-full h-full">
-                <!-- graph -->
-                <div
-                  class="shadow-lg bg-white hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md transition ease-in-out duration-200"
-                >
-                  <!-- text header -->
-                  <div>
-                    <picture>
-                      <source
-                        type="image/webp"
-                        srcset="aset/webp foto/foto anak/photo_tea_1.webp"
-                      />
-                      <img
-                        src="aset/webp foto/foto anak/photo_tea_1.webp"
-                        loading="lazy"
-                        alt="Foto Taman Bermain"
-                        class="w-full h-full"
-                      />
-                    </picture>
-
-                    <h2 class="font-inter text-2xl text-black text-center mt-4">
-                      Taman Bermain
-                    </h2>
-                  </div>
-                  <!-- text header end -->
-                </div>
-              </div>
-            </div>
-            <div class="md:col-span-2 lg:col-span-1 my-5">
-              <!-- button start -->
-              <div class="w-full h-full">
-                <!-- graph -->
-                <div
-                  class="shadow-lg bg-white hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md transition ease-in-out duration-200"
-                >
-                  <!-- text header -->
-                  <div>
-                    <picture>
-                      <source
-                        type="image/webp"
-                        srcset="aset/webp foto/foto anak/photo_tea_3.webp"
-                      />
-                      <img
-                        src="aset/webp foto/foto anak/photo_tea_3.webp"
-                        loading="lazy"
-                        alt="Foto Kantin"
-                        class="w-full h-full"
-                      />
-                    </picture>
-
-                    <h2 class="font-inter text-2xl text-black text-center mt-4">
-                      Kantin
-                    </h2>
-                  </div>
-                  <!-- text header end -->
-                </div>
-              </div>
-            </div>
-            <div class="md:col-span-2 lg:col-span-1 my-5">
-              <!-- button start -->
-              <div class="w-full h-full">
-                <!-- graph -->
-                <div
-                  class="shadow-lg bg-white hover:scale-105 hover:shadow-2xl ml-5 py-5 px-3 space-y-6 rounded-md transition ease-in-out duration-200"
-                >
-                  <!-- text header -->
-                  <div>
-                    <picture>
-                      <source
-                        type="image/webp"
-                        srcset="aset/webp foto/foto anak/photo_guest_1.webp"
-                      />
-                      <img
-                        src="aset/webp foto/foto anak/photo_guest_1.webp"
-                        loading="lazy"
-                        alt="Foto Ruang Belajar"
-                        class="w-full h-full"
-                      />
-                    </picture>
-
-                    <h2 class="font-inter text-2xl text-black text-center mt-4">
-                      Ruang Belajar
-                    </h2>
-                  </div>
-                  <!-- text header end -->
-                </div>
-              </div>
-            </div>
             <!-- 3 button end -->
           </div>
         </div>
@@ -1594,7 +1125,7 @@
           class="xl:container m-auto px-6 text-gray-600 dark:text-gray-300 md:px-12 xl:px-6"
         >
           <h1
-            class="mb-12 text-center text-2xl font-bold text-gray-800 dark:text-white md:text-4xl"
+            class="mb-12 text-black text-center text-2xl font-bold md:text-4xl"
           >
             Bagaimana Pendapat Orang Tua ?
           </h1>
@@ -1618,22 +1149,27 @@
                   />
                 </picture>
                 <p class="md:text-xl">
-                  <span class="font-serif">"</span> Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Quaerat repellat perspiciatis
-                  excepturi est. Non ipsum iusto aliquam consequatur repellat
-                  provident, omnis ut, sapiente voluptates veritatis cum
-                  deleniti repudiandae ad doloribus.
+                  <span class="font-serif">"</span> Ananda mentari menjadi
+                  pilihan tepat disaat yang tepat untuk keluarga. Keamanan dan
+                  kenyamanan yang terjamin untuk buah hati menjadi prioritas.
+                  Bermain dan belajar seperti berada di tengah keluarga.
+                  Alhamdulillah Ajwa dan Oca saat masuk ke jenjang pendidikan
+                  berikutnya sudah mampu mengikuti aktifitas sekolah. Dan yang
+                  saya suka ananda terbiasa dengan doa-doa harian. Terimakasih
+                  Bunda-Bunda di playshool
                   <span class="font-serif">"</span>
                 </p>
                 <div>
-                  <h3 class="text-lg font-semibold leading-none">Jane Doe</h3>
-                  <span class="text-xs text-gray-500">Product Designer</span>
+                  <h3 class="text-lg font-semibold leading-none">
+                    Dr. Prie Aka Mahdayanti
+                  </h3>
+                  <span class="text-xs text-gray-500">Tenaga Pengajar</span>
                 </div>
               </div>
             </div>
 
             <div
-              class="rounded-3xl sm:flex sm:space-x-8 border border-gray-100 bg-gray-200 p-8 text-center shadow-3xl shadow-gray-600/10"
+              class="rounded-3xl sm:flex sm:space-x-8 border border-gray-100 dark:border-gray-700 bg-gray-200 dark:bg-gray-800 p-8 text-center shadow-2xl shadow-gray-600/10 dark:shadow-none"
             >
               <picture>
                 <source
@@ -1643,24 +1179,26 @@
                 <img
                   src="aset/webp foto/avatar1.webp"
                   loading="lazy"
-                  alt="Foto Testimoni 2"
                   height="1000"
                   width="1000"
+                  alt="Foto Testimoni 2"
                   class="rounded-full"
                 />
               </picture>
-              <div class="mt-4 text-center sm:mt-0 sm:text-left">
+              <div class="mt-4 space-y-4 text-center sm:mt-0 sm:text-left">
                 <p>
-                  <span class="font-serif">"</span> Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Quaerat repellat perspiciatis
-                  excepturi est. Non ipsum iusto aliquam consequatur repellat
-                  provident, omnis ut, sapiente voluptates veritatis cum
-                  deleniti repudiandae ad doloribus.
+                  <span class="font-serif">"</span> Terimakasih untuk PAUD
+                  ananda mentari tempat belajar yang hangat suasana
+                  pembelajarannya, komunikatif dengan wali, membangun mental
+                  anak yang humanis. Semoga mampu menopang special karakter anak
+                  untuk mampu berprestasi sesuai kemampuannya
                   <span class="font-serif">"</span>
                 </p>
                 <div>
-                  <h6 class="text-lg font-semibold leading-none">Jane Doe</h6>
-                  <span class="text-xs text-gray-500">Product Designer</span>
+                  <h6 class="text-lg font-semibold leading-none">
+                    Bp Eko Purwanto
+                  </h6>
+                  <span class="text-xs text-gray-500">Kontraktor</span>
                 </div>
               </div>
             </div>
@@ -1683,16 +1221,18 @@
               </picture>
               <div class="mt-4 space-y-4 text-center sm:mt-0 sm:text-left">
                 <p>
-                  <span class="font-serif">"</span> Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Quaerat repellat perspiciatis
-                  excepturi est. Non ipsum iusto aliquam consequatur repellat
-                  provident, omnis ut, sapiente voluptates veritatis cum
-                  deleniti repudiandae ad doloribus.
+                  <span class="font-serif">"</span> Selama bersekolah di PAUD
+                  Ananda Mentari, anak saya jadi lebih percaya diri dan mudah
+                  diri di lingkungan baru, anak saya terlihat senang sekali akan
+                  berangkat sekolah. Bagi saya bersekolah dengan senang adalah
+                  awal yang penting.
                   <span class="font-serif">"</span>
                 </p>
                 <div>
-                  <h6 class="text-lg font-semibold leading-none">Jane Doe</h6>
-                  <span class="text-xs text-gray-500">Product Designer</span>
+                  <h6 class="text-lg font-semibold leading-none">
+                    Bp Eddy Mahmudi
+                  </h6>
+                  <span class="text-xs text-gray-500">Senior Manager</span>
                 </div>
               </div>
             </div>
